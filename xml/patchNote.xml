@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<items>
+<item>
+    <ul class="sectionTitle">
+        <li><a href="index.html">Home</a></li>
+        <img src="../img/news/ic_rightArrow.png" alt=""/>
+        <li><a href="article.html">Article</a></li>
+        <img src="../img/news/ic_rightArrow.png" alt=""/>
+        <li><a href="patchnote.html">Patchnote</a></li>
+    </ul>
+    <div class="subject">
+    <h1>PATCH NOTES FOR MARCH 2020 RELEASE</h1>
+    <p>2020-03-10 - BY CCP DOPAMINE - EVE PATCH-NOTES</p>
+    <img src="../img/patchnote/PatchNotes_March2020.jpg"/>
+    </div>
+    <div class="conText">
+        <p>The following page will list patch notes for the March 2020. 
+        
+        All subsequent point releases will be temporarily highlighted on top and added to the complete patch notes list below. 
+        
+        The updates will also be tracked in the official forum thread.</p>
+
+        <div>
+
+        <p>Initial Release Date: 10/03/2020
+        
+        Last Update: 09/04/2020</p>
+
+        <strong>FEATURES &amp; CHANGES</strong>
+        
+        <span>Graphics:</span>
+            <ul>
+                <li>Removed old video from in-game billboards. Everyone has a clear vision now.</li>
+                <li>Added 16 new videos to the in-game billboards; 15 ship videos and 1 Guristas video.</li>
+            </ul>
+        <strong>DEFECT FIXES</strong>
+
+        <span>Technical:</span>
+            <ul>
+                <li>Fixed an issue where PLEX could be lost after buying from multiple orders at the same time.</li>
+            </ul>
+        <span>Localization:</span>
+            <ul>
+                <li>Updated Aura conversations for German, Russian and French</li>
+                <li>Fixed text formatting and language inconsistencies for German, Russian and French</li>
+            </ul>
+        <span>User Interface:</span>
+            <ul>
+                <li>Fixed an issue where buttons to Upgrade to Omega and Buy Plex in the Daily Login Campaigns window didn't work.</li>
+            </ul>
+        </div>  
+    </div>  
+</item>
+<item>
+    <ul class="sectionTitle">
+        <li><a href="index.html">Home</a></li>
+        <img src="../img/news/ic_rightArrow.png" alt=""/>
+        <li><a href="article.html">Article</a></li>
+        <img src="../img/news/ic_rightArrow.png" alt=""/>
+        <li><a href="patchnote.html">Patchnote</a></li>
+    </ul>
+    <div class="subject">
+    <h1>PATCH NOTES FOR FEBRUARY 2020 RELEASE</h1>
+    <p>2020-02-11 - BY CCP DOPAMINE - EVE PATCH-NOTES</p>
+    <img src="../img/patchnote/PatchNotes_Feb2020.jpg"/>
+    </div>
+    <div class="conText">
+        <p>The following page will list patch notes for the February 2020 release that was originally deployed on 11 February. All subsequent point releases will be temporarily highlighted on top and added to the complete patch notes below. The updates will also be tracked in the official forum thread.</p>
+        <div>
+            <p>New Update: 28/02/2020</p>
+
+        <strong>DEFECT FIXES</strong>
+
+        <span>Gameplay:</span>
+
+            <ul>
+                <li>Fixed an issue causing Filaments to use incorrect construction materials for Blueprints.</li>
+            </ul>
+
+                <p>For discussion about today's content release, please head on over to the respective comments threads:</p>
+            
+            <ul>
+                <li>General Feedback</li>
+                <li>Known Issues</li>
+                <li>General Feedback and Known Issues (Mac)</li>
+            </ul>
+        </div>
+    </div>
+</item>
+<item>
+    <ul class="sectionTitle">
+        <li><a href="index.html">Home</a></li>
+        <img src="../img/news/ic_rightArrow.png" alt=""/>
+        <li><a href="article.html">Article</a></li>
+        <img src="../img/news/ic_rightArrow.png" alt=""/>
+        <li><a href="patchnote.html">Patchnote</a></li>
+    </ul>
+    <div class="subject">
+    <h1>PATCH NOTES FOR JANUARY 2020 RELEASE</h1>
+    <p>2020-01-16 - BY CCP CONVICT - EVE PATCH-NOTES</p>
+    <img src="../img/patchnote/2020_patch_notes.jpg"/>
+    </div>
+    <div class="conText">
+        <div> 
+        <span>PATCH NOTES FOR JANUARY 2020 RELEASE - 2020-01-30.1</span>
+
+        <span>RELEASED ON THURSDAY, 30 JANUARY 2020</span>
+        
+        <strong>DEFECT FIXES:</strong>
+
+        <span>User Interface:</span>
+        <ul>
+            <li>Fixed an issue where the selected Item Options are grayed out after losing a ship.</li>
+        </ul>
+        </div>
+    </div>
+</item>
+</items>

@@ -1,0 +1,334 @@
+@import url('common.css');
+/* body{
+    overflow-x:hidden;
+    overflow-y:hidden;
+} */
+#total{
+    width:100%;
+}
+/* -------------------------------- header ------------------------------------ */
+header{
+    position:fixed;
+    width:100%;
+    background-color:#000;
+    z-index:25;
+    padding:0% 15%
+}
+header.active{
+    opacity:0.5
+}
+header .header_wrap{
+    width:100%;
+    height:100%;
+    display:flex;
+    position:relative;
+}
+.header_wrap figure{
+    width:15%;
+}
+.header_wrap figure img{
+    width:100%;
+}
+
+/* --------------------------------- nav -------------------------------------- */
+.header_wrap .navBg{
+    width:100%;
+    background-color:#000;
+    display:flex;
+}
+.header_wrap nav{
+    width:100%;
+    padding:1.7%;
+}
+.header_wrap nav ul{
+    display:flex;
+    justify-content:center;
+    margin-top:10px;
+}
+.header_wrap nav ul li{
+    margin-right:5%;
+    width:10%;
+    position:relative;
+}
+.header_wrap nav ul li a{
+    color:#fff;
+    font-size:1em;
+}
+.header_wrap nav ul div{
+    position:relative;
+    margin-top:40px;
+    line-height:80px;
+    background-color:#000;
+    display:none;
+}
+.header_wrap nav ul div a{
+    display:block;
+    font-size:1em;
+    color:#fff;
+}
+.burger{
+    position:relative;
+    right:0;
+    top:30%;
+    display:none;
+    z-index:10;
+    transition:all .5s;
+}
+.burger span{
+    width:30px;
+    height:2px;
+    background-color:#fff;
+    display:block;
+    position:absolute;
+    transition:all .5s;
+}
+.burger span:nth-of-type(1){
+    top:0
+}
+.burger span:nth-of-type(2){
+    top:6px
+}
+.burger span:nth-of-type(3){
+    top:12px
+}
+/* 버거메뉴 애니메이션입니다 */
+@keyframes menu-bar07-01 {
+    0% {
+        transform : translateY(6px) rotate(45deg);
+    }
+    50% {
+        transform : translateY(6px) rotate(0);
+    }
+    100% {
+        transform : translateY(0) rotate(0);
+    }
+}
+.burger span:nth-of-type(2) {
+    transition : all .25s .25s;
+    opacity : 1;
+}
+.burger span:nth-of-type(3) {
+    animation : menu-bar07-02 .75s forwards;
+}
+
+@keyframes menu-bar07-02 {
+    0% {
+        transform : translateY(-6px) rotate(-45deg);
+    }
+    50% {
+        transform : translateY(-6px) rotate(0);
+    }
+    100% {
+        transform : translateY(0) rotate(0);
+    }
+}
+
+.burger.active span:nth-of-type(1) {
+    animation : active-menu-bar07-01 .75s forwards;
+}
+
+@keyframes active-menu-bar07-01 {
+    0% {
+        transform : translateY(0) rotate(0);
+    }
+    50% {
+        transform : translateY(6px) rotate(0);
+    }
+    100% {
+        transform : translateY(6px) rotate(45deg);
+    }
+}
+.burger.active span:nth-of-type(2) {
+    opacity : 0;
+}
+.burger.active span:nth-of-type(3) {
+    -webkit-animation : active-menu-bar07-02 .75s forwards;
+    animation : active-menu-bar07-02 .75s forwards;
+}
+
+@keyframes active-menu-bar07-02 {
+    0% {
+        transform : translateY(0) rotate(0);
+    }
+    50% {
+        transform : translateY(-6px) rotate(0);
+    }
+    100% {
+        transform : translateY(-6px) rotate(-45deg);
+    }
+}
+/* --------------- 모바일 메뉴입니다 -------- */
+.mobileMenu{
+    position:fixed;
+    right:-60%;
+    top:50px;
+    transition:.5s;
+    /* display:none; */
+    opacity:0;
+}
+.mobileMenu.show{
+    /* display:block; */
+    opacity:1;
+    z-index:5;
+    right:-10%;
+    top:50px;
+    width:50%;
+    transition:.5s;
+}
+.mobileMenu ul{
+    background-color:#000;
+    height:100vh;
+    /* margin-top:10px; */
+    padding:5%;
+}
+.mobileMenu ul li{
+    padding:5% 5%;
+}
+.mobileMenu li > div{
+    opacity:0;
+    height:0;
+    line-height:55px;
+    margin-top:7%;
+    margin-left:20px;
+    transition:.5s;
+}
+.mobileMenu div.show{
+    opacity:1;
+    height:100%;
+}
+.mobileMenu a{
+    color:#fff;
+    display:block;
+}
+/* --------------------- section ------------------------- */
+section{
+    background:url('../img/bg_background7.jpg')no-repeat;
+    background-size:cover;
+    background-attachment:scroll;
+}
+.sectionWrap > h1{
+    color:#fff;
+    font-size:2em;
+    margin-left:100px;
+    margin-bottom:35px;
+}
+.sectionWrap{
+    padding:150px 100px 100px 100px;
+}
+.container{
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    margin-left:100px;
+}
+.container figure{
+    width:30%;
+    padding:2%;
+    position:relative;
+    overflow:hidden;
+}
+.container figure h1{
+    color:#fff;
+    text-align:center;
+    margin-bottom:35px;
+    font-size:1.5em;
+}
+.container figure:hover h1{
+    color:#ccc;
+}
+.container figure a{
+    width:100%;
+    height:100%;
+}
+.container figure img{
+    width:100%;
+    height:100%;
+    opacity:0.8;
+}
+.container figure:hover figcaption,img{
+    opacity:1;
+    bottom:0%;
+}
+.container figcaption{
+    width:80%;
+    background-color:rgba(50,66,81,1);
+    position:absolute;
+    left:10%;
+    bottom:-10%;
+    padding:5%;
+    line-height:30px;
+    opacity:0;
+    transition:.3s;
+}
+.container figcaption strong{
+    color:#fff;
+}
+.container figcaption p{
+    color:#ccc;
+}
+.container figure figcaption span{
+    color:yellow;
+}
+.container figure figcaption > a{
+    color:#fff;
+    background-color:orange;
+    text-align:center;
+    padding:1%;
+    position:relative;
+}
+.container figure figcaption > a:after{
+    content:"";
+    display:block;
+    width:0;
+    height:100%;
+    background-color:#fff;
+    position:absolute;
+    left:0;
+    top:0;
+    opacity:0.4;
+    transition:.5s
+}
+.container figure figcaption > a:hover:after{
+    width:100%;
+}
+/* --------------------------------- footer -------------------------------- */
+footer{
+    width:100%;
+    padding:5% 15%;
+    background-color:#0a0d13;
+}
+footer .sns{
+    z-index:10;
+}
+
+footer div:nth-of-type(1){
+    display:flex;
+    justify-content:space-between;
+}
+
+footer div:nth-of-type(1) p{
+    color:#83868a;
+    font-weight:600;
+    margin-left:11.5%;
+}
+
+footer div:nth-of-type(2){
+    display:flex;
+    justify-content:space-around
+}
+
+footer div:nth-of-type(2) ul li:nth-of-type(1){
+    color:#83868a;
+}
+footer div:nth-of-type(2) ul li{
+    color:#eee;
+    line-height:250%;
+}
+footer div:nth-of-type(2) ul li a{
+    color:#eee;
+}
+.copyRight{
+    color:#ccc;
+    text-align:center;
+    margin-top:35px;
+}

@@ -1,0 +1,143 @@
+{   
+    "portfolio":[
+        {   
+            "Name" :"Charon",
+            "Mass" : "Mass",
+            "Cargo" : "Cargo",
+            "mText" : "960000t",
+            "cText" : "465000 m3",
+            "ESTvalue" : "EST.value",
+            "velocity" : "velocity",
+            "ESTText" : "1b isk",
+            "vText" : "60m/s",
+            "HitPoint" : "HitPoint",
+            "spec" : "spec",
+            "wText" : "142500",
+            "iText" : "Hauling",
+            "sImg" : "../img/ic_shipscharon.png"
+        },
+
+        {   
+            "Name" : "Retribution",
+            "Mass" : "Mass",
+            "Cargo" : "Cargo",
+            "mText" : "1053t",
+            "cText" : "135 m3",
+            "ESTvalue" : "EST.value",
+            "velocity" : "velocity",
+            "ESTText" : "40m isk",
+            "vText" : "300m/s",
+            "HitPoint" : "HitPoint",
+            "spec" : "spec",
+            "wText" : "2554",
+            "iText" : "Combat",
+            "sImg" : "../img/ic_spaceshipRetribution.png"
+        },
+
+        {
+            "Name" : "Rifter",
+            "Mass" : "Mass",
+            "Cargo" : "Cargo",
+            "mText" : "1067t",
+            "cText" : "140 m3",
+            "ESTvalue" : "EST.value",
+            "velocity" : "velocity",
+            "ESTText" : "300k isk",
+            "vText" : "365m/s",
+            "HitPoint" : "HitPoint",
+            "spec" : "spec",
+            "wText" : "1250",
+            "iText" : "Combat",
+            "sImg" : "../img/ic_spaceshipRiftter.png"
+        },
+
+        {
+            "Name" : "Raven",
+            "Mass" : "Mass",
+            "Cargo" : "Cargo",
+            "mText" : "99300t",
+            "cText" : "830 m3",
+            "ESTvalue" : "EST.value",
+            "velocity" : "velocity",
+            "ESTText" : "140m isk",
+            "vText" : "113m/s",
+            "HitPoint" : "HitPoint",
+            "spec" : "spec",
+            "wText" : "19200",
+            "iText" : "Combat",
+            "sImg" : "../img/ic_spaceshipRaven.png"
+        },
+
+        {
+            "Name" : "Astero",
+            "Mass" : "Mass",
+            "Cargo" : "Cargo",
+            "mText" : "975t",
+            "cText" : "210 m3",
+            "ESTvalue" : "EST.value",
+            "velocity" : "velocity",
+            "ESTText" : "60m isk",
+            "vText" : "312m/s",
+            "HitPoint" : "HitPoint",
+            "spec" : "spec",
+            "wText" : "1740",
+            "iText" : "Exploration",
+            "sImg" : "../img/ic_spaceshipAstero.png"
+        },
+
+        {
+            "Name" : "Venture",
+            "Mass" : "Mass",
+            "Cargo" : "Cargo",
+            "mText" : "1200t",
+            "cText" : "5050 m3",
+            "ESTvalue" : "EST.value",
+            "velocity" : "velocity",
+            "ESTText" : "200k isk",
+            "vText" : "335m/s",
+            "HitPoint" : "HitPoint",
+            "spec" : "spec",
+            "wText" : "600",
+            "iText" : "Mining",
+            "sImg" : "../img/ic_spaceshipVenture.png"
+        },
+
+        {
+            "Name" : "Hel",
+            "Mass" : "Mass",
+            "Cargo" : "Cargo",
+            "mText" : "1650000t",
+            "cText" : "56720 m3",
+            "ESTvalue" : "EST.value",
+            "velocity" : "velocity",
+            "ESTText" : "15b isk",
+            "vText" : "85m/s",
+            "HitPoint" : "HitPoint",
+            "spec" : "spec",
+            "wText" : "1010000",
+            "iText" : "Fleet Support",
+            "sImg" : "../img/ic_spacechipHel.png"
+        },
+
+        {
+            "Name" : "leshak",
+            "Mass" : "Mass",
+            "Cargo" : "Cargo",
+            "mText" : "63000t",
+            "cText" : "933 m3",
+            "ESTvalue" : "EST.value",
+            "velocity" : "velocity",
+            "ESTText" : "400m isk",
+            "vText" : "113m/s",
+            "HitPoint" : "HitPoint",
+            "spec" : "spec",
+            "wText" : "22000",
+            "iText" : "Combat",
+            "sImg" : "../img/ic_shipsleshak.png"
+        }
+
+    ]
+ }
+
+
+

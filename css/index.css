@@ -1,0 +1,1169 @@
+@import url('common.css');
+body{
+    overflow-x:hidden;
+    overflow-y:hidden;
+}
+#total{
+    width:100%;
+}
+
+/* -------------------------------- header ------------------------------------ */
+header{
+    position:fixed;
+    width:100vw;
+    background-color:#000;
+    z-index:25;
+    padding:0% 15%
+}
+header.active{
+    opacity:0.5
+}
+header .header_wrap{
+    width:100%;
+    height:100%;
+    display:flex;
+    position:relative;
+}
+.header_wrap figure{
+    width:15%;
+}
+.header_wrap figure img{
+    width:100%;
+}
+
+/* --------------------------------- nav -------------------------------------- */
+.header_wrap .navBg{
+    width:100%;
+    background-color:#000;
+    display:flex;
+}
+.header_wrap nav{
+    width:100%;
+    padding:1.7%;
+}
+.header_wrap nav ul{
+    display:flex;
+    justify-content:center;
+    margin-top:10px;
+}
+.header_wrap nav ul li{
+    margin-right:5%;
+    width:10%;
+    position:relative;
+}
+.header_wrap nav ul li a{
+    color:#fff;
+    font-size:1em;
+}
+.header_wrap nav ul div{
+    position:relative;
+    margin-top:40px;
+    line-height:80px;
+    background-color:#000;
+    display:none;
+}
+.header_wrap nav ul div a{
+    display:block;
+    font-size:1em;
+    color:#fff;
+}
+.burger{
+    position:relative;
+    right:0;
+    top:30%;
+    display:none;
+    z-index:10;
+    transition:all .5s;
+}
+.burger span{
+    width:30px;
+    height:2px;
+    background-color:#fff;
+    display:block;
+    position:absolute;
+    transition:all .5s;
+}
+.burger span:nth-of-type(1){
+    top:0
+}
+.burger span:nth-of-type(2){
+    top:6px
+}
+.burger span:nth-of-type(3){
+    top:12px
+}
+/* 버거메뉴 애니메이션입니다 */
+@keyframes menu-bar07-01 {
+    0% {
+        transform : translateY(6px) rotate(45deg);
+    }
+    50% {
+        transform : translateY(6px) rotate(0);
+    }
+    100% {
+        transform : translateY(0) rotate(0);
+    }
+}
+.burger span:nth-of-type(2) {
+    transition : all .25s .25s;
+    opacity : 1;
+}
+.burger span:nth-of-type(3) {
+    animation : menu-bar07-02 .75s forwards;
+}
+
+@keyframes menu-bar07-02 {
+    0% {
+        transform : translateY(-6px) rotate(-45deg);
+    }
+    50% {
+        transform : translateY(-6px) rotate(0);
+    }
+    100% {
+        transform : translateY(0) rotate(0);
+    }
+}
+
+.burger.active span:nth-of-type(1) {
+    animation : active-menu-bar07-01 .75s forwards;
+}
+
+@keyframes active-menu-bar07-01 {
+    0% {
+        transform : translateY(0) rotate(0);
+    }
+    50% {
+        transform : translateY(6px) rotate(0);
+    }
+    100% {
+        transform : translateY(6px) rotate(45deg);
+    }
+}
+.burger.active span:nth-of-type(2) {
+    opacity : 0;
+}
+.burger.active span:nth-of-type(3) {
+    -webkit-animation : active-menu-bar07-02 .75s forwards;
+    animation : active-menu-bar07-02 .75s forwards;
+}
+
+@keyframes active-menu-bar07-02 {
+    0% {
+        transform : translateY(0) rotate(0);
+    }
+    50% {
+        transform : translateY(-6px) rotate(0);
+    }
+    100% {
+        transform : translateY(-6px) rotate(-45deg);
+    }
+}
+/* --------------- 모바일 메뉴입니다 -------- */
+.mobileMenu{
+    position:fixed;
+    right:-60%;
+    top:50px;
+    transition:.5s;
+    /* display:none; */
+    opacity:0;
+}
+.mobileMenu.show{
+    /* display:block; */
+    opacity:1;
+    z-index:5;
+    right:-10%;
+    top:50px;
+    width:50%;
+    transition:.5s;
+}
+.mobileMenu ul{
+    background-color:#000;
+    height:100vh;
+    /* margin-top:10px; */
+    padding:5%;
+}
+.mobileMenu ul li{
+    padding:5% 5%;
+}
+.mobileMenu li > div{
+    opacity:0;
+    height:0;
+    line-height:55px;
+    margin-top:7%;
+    margin-left:20px;
+    transition:.5s;
+}
+.mobileMenu div.show{
+    opacity:1;
+    height:100%;
+}
+.mobileMenu a{
+    color:#fff;
+    display:block;
+}
+
+/* -------------------------------- visual ----------------------------------- */
+.visual{
+    width:100%;
+    height:50vw;
+    /* height:100vh; */
+    position:relative;
+    left:0;
+    top:0;
+}
+
+
+.visual figure img{
+    position:absolute;
+    width:100%;
+    height:100%;
+    opacity:0.6
+}
+
+.visual figure img.active{
+    display:block;
+}
+.visualContent{
+    width:85%;
+    position:absolute;
+    left:15%;
+    top:35%;
+    display:flex;
+}
+.visual video{
+    width:35%;
+    z-index:10;
+    transform:scale(1.1);
+    margin-right:100px;
+}
+.visual .visualText{
+    margin-top:-100px;
+    opacity:0;
+    text-align:center;
+    transition:.8s;
+}
+.visual .visualText.visible{
+    opacity:1;
+    margin-top:0;
+}
+.visual .visualText h1{
+    color:#fff;
+    font-size:2.5vw;
+    margin-bottom:8%;
+}
+
+.visual .visualText p{
+    font-size:1.5vw;
+    color:#fff;
+    text-align:center;
+}
+
+.visual .visualText a{
+    padding:2% 3%;
+    background-color:#2981bb;
+    margin-top:6%;
+    position:relative;
+    font-size:1vw;
+}
+
+.visual .visualText a:after{
+    content:"";
+    width:0;
+    height:100%;
+    display:block;
+    background-color:#fff;
+    position:absolute;
+    left:0;
+    top:0;
+    opacity:0.1;
+    transition:.5s;
+}
+
+.visual .visualText a:hover:after{
+    width:100%;
+}
+.visual .visualText a:nth-of-type(1){
+    margin-right:7%
+}
+
+.visual .visualText span{
+    font-size:1em;
+    color:#fff;
+}
+
+/* -------------------------- container ----------------------- */
+
+.container{
+    width:100%;
+    background:url('../img/bg_background7.jpg')no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+}
+/* --------------------- faction -------------------------------- */
+.faction{
+    width:100%;
+}
+.faction_title{
+    padding-top:0%;
+    transition:1s;
+    opacity:0;
+}
+.faction_title.show{
+    opacity:1;
+    padding-top:10%;
+}
+
+.faction_title p{
+    color:#fff;
+    font-size:2vw;
+    text-align:center;
+    margin-top:10px;
+    letter-spacing:1vw;
+    font-size:2em;
+}
+.faction_wrap{
+    width:100%;
+    display:flex;
+    padding:0% 10%;
+    opacity:0;
+    transition:1s;
+}
+.faction_wrap.show{
+    padding:5% 15%;
+    opacity:1;
+}
+.faction_wrap div{
+    width:100%;
+    margin:0 1%;
+    height:30vw;
+    position:relative;
+}
+.faction_wrap figure{
+    width:100%;
+    height:100%;
+    position:absolute;
+    background:#000;
+}
+
+.faction_wrap figure img{
+    width:100%;
+    height:100%;
+    position:absolute;
+}
+
+.faction_wrap figure .amarr{
+    width:100%;
+    height:100%;
+}
+
+.faction_wrap figure .factionIntro{
+    width:100%;
+    height:100%;
+}
+.faction_wrap figure .factionIntro.hover{
+    z-index:15;
+}
+
+.faction_wrap figure figcaption{
+    position:absolute;
+    left:31.5%;
+    bottom:0%;
+    opacity:0;
+    transition:.5s;
+}
+
+.faction_wrap figure figcaption a{
+    color:#fff;
+    border:1px unset #eee;
+    padding:10px 10px;
+    transition:.5s;
+}
+.faction_wrap .bgf{
+    opacity:1;
+    transition:.5s;
+}
+.faction_wrap .front{
+    width:100%;
+    height:100%;
+    background-color:#000;
+    opacity:0.7;
+    transition:1s;
+}
+/* ------------------------faction active content---------------------------- */
+.faction_wrap .bgf.active{
+    opacity:0;
+}
+.faction_wrap .front.active{
+    opacity:0;
+}
+
+.faction_wrap figure .icon{
+    width:35%;
+    height:25%;
+    left:32%;
+    bottom:20%;
+}
+
+.faction_wrap figure .s_bgf{
+    opacity:1;
+    transition:.8s;
+}
+
+.faction_wrap figure .s_bgf.active{
+    opacity:0;
+}
+.faction_wrap figure figcaption.active{
+    z-index:15;
+    opacity:1;
+    bottom:10%;
+}
+.faction_wrap figure figcaption a.active{
+    color:#fff;
+    font-weight:600;
+}   
+
+/* ------------------------------ player guide -------------------------------- */
+.guide{
+    width:100%;
+    padding:15% 20%;
+    opacity:0;
+    transition:1s;  
+}
+.guide.show{
+    padding:10% 15%;
+    opacity:1;
+}
+.guide h2{
+    color:#fff;
+    font-size:1.5em;
+    text-align:left;
+    margin:2% 0 2% 5%;
+}
+.playerGuide{
+    display:flex;
+    justify-content:space-between;
+    margin:0 auto;
+}
+
+.playerGuide figure{ 
+    margin:7%;
+    position:relative;
+    left:0;
+    bottom:20%;
+    background-color:#000;
+}
+
+.playerGuide figure img{
+    width:100%;
+    height:100%;
+    opacity:.6;
+    transition:.5s;
+}
+
+.playerGuide figure:hover img{
+    opacity:1;
+}
+.playerGuide figcaption{
+    position:absolute;
+    left:0;
+    bottom:0;
+    padding:5%;
+}
+.playerGuide figcaption h3{
+    color:#fff;
+    margin-bottom:3%;
+    font-size:1em;
+}
+.playerGuide figcaption p{
+    white-space:pre-line;
+    color:#fff;
+    font-size:0.8vw;
+}
+.playerGuide figcaption a{
+    color:#fff;
+    font-size:1rem;
+    margin-top:10px;
+}
+
+.pgLeft{
+    position:relative;
+}
+.pgLeft video{
+    position:absolute;
+    width:100%;
+    height:100%;
+}
+/* ---------------------- ship showcase ----------------------------- */
+
+.showCase{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    padding:10% 20% 10% 20%;
+    opacity:0;
+    transition:.6s;
+}
+.showCase.show{
+    padding:10% 15% 10% 15%;
+    opacity:1;
+}
+.showCase h2{
+    color:#fff;
+    text-align:left;
+    font-size:1.5em;
+}
+.showCase .shipInfo{
+    position:relative;
+    margin-top:10%;
+    /* overflow:hidden; */
+}
+.showCase.wSlide{
+    position:relative;
+    left:0;
+    top:0;
+}
+.showCase .shipInfo .shipDetail{
+    width:100%;
+}
+.showCase .shipInfo table{
+    position:relative;
+    width:50%;
+    height:45vh;
+    background-color:rgba(11,29,45,.7);
+    border-radius:5%;
+    float:left;
+}
+.showCase .shipInfo.active{
+    opacity:0;
+}
+
+.showCase .shipInfo table th,tr,td{
+    color:#fff;
+    border:1px solid rgba(50,66,81,.7);
+    text-align:center;
+}
+.showCase .shipInfo table th{
+    border:none;
+}
+.showCase .shipInfo table tr{
+    width:10%;
+}
+.showCase .shipInfo table td{
+    width:10%;
+}
+
+.shipInfo figure{
+    float:right;
+    width:40%;
+    margin-left:1%;
+    margin-top:50px;
+}
+.shipInfo figure img{
+    width:100%;
+}
+
+.shipInfo .shipTable{
+    opacity:1;
+    transition:.5s;
+}
+.shipInfo .tableImg{
+    opacity:1;
+    transition:.5s;
+}
+.shipInfo .shipTable.active{
+    opacity:0;
+    transition:.5s;
+}
+.shipInfo .tableImg.active{
+    opacity:0;
+    transition:.5s;
+}
+
+/* ------------------------------ aside -------------------------------------- */
+aside{
+    position:fixed;
+    right:0%;
+    top:20%;
+    opacity:0;
+    width:7%;
+    transition:1.5s;
+}
+aside.show{
+    opacity:1;
+    right:3%;
+}
+.slideImg{
+    display:flex;
+    flex-direction:column;
+    
+}
+.slideImg img{
+    width:100%;
+    opacity:.8;
+}
+.slideImg img:hover{
+    transform:scale(1.3);
+    transition:.5s;
+    opacity:1;
+}
+
+/* ----------------- footer ----------------- */
+footer{
+    width:100%;
+    padding:5% 15%;
+    background-color:#0a0d13;
+}
+footer .sns{
+    z-index:10;
+}
+
+footer div:nth-of-type(1){
+    display:flex;
+    justify-content:space-between;
+}
+
+footer div:nth-of-type(1) p{
+    color:#83868a;
+    font-weight:600;
+    margin-left:11.5%;
+}
+
+footer div:nth-of-type(2){
+    display:flex;
+    justify-content:space-around
+}
+
+footer div:nth-of-type(2) ul li:nth-of-type(1){
+    color:#83868a;
+}
+footer div:nth-of-type(2) ul li{
+    color:#eee;
+    line-height:250%;
+}
+footer div:nth-of-type(2) ul li a{
+    color:#eee;
+}
+.copyRight{
+    color:#ccc;
+    text-align:center;
+    margin-top:35px;
+}
+/* ---------------------- media -------------------------------------- */
+/* -------------------- 1024px ------------------- */
+@media(max-width:1024px){
+    body{
+        overflow-x:visible;
+        overflow-y:visible;
+    }
+    .header_wrap nav ul li{
+        width:10%;
+    }
+    .header_wrap nav ul li > a{
+        font-size:0.6em;
+    }
+    .header_wrap nav ul li div a{
+        font-size:0.3em;
+        margin-top:20px;
+        line-height:50px;
+    }
+    .visual{
+        height:70vw;
+    }
+    .visualContent{
+        width:90%;
+        left:10%;
+    }
+    .faction_title{
+        opacity:1;
+        padding-top:10%
+    }
+    .faction_wrap{
+        opacity:1;
+        padding: 5% 15%;
+    }
+    .faction_wrap figcaption a{
+        font-size:0.7em;
+        left:0%;
+    }
+    .guide{
+        opacity:1;
+        padding:10% 15%;
+    }
+    .showCase{
+        opacity:1;
+        padding:0% 15% 10% 15%;
+    }
+    .showCase .shipTable{
+        margin-right:3%
+    }
+    .showCase .tableImg{
+        margin-top:20%;
+    }
+    aside{
+        position:absolute;
+        top:180%;
+        right:0;
+        opacity:1;
+    }
+    .sns{
+        margin-right:10%;
+    }
+    footer div:nth-of-type(1) p{
+        margin-left:8.5%
+    }
+    footer div:nth-of-type(2){
+        margin-top:1%;
+    }
+    footer div:nth-of-type(2) ul li a{
+        font-size:0.8em
+    }
+}
+/* --------------------- 768 --------------------- */
+@media(max-width:768px){
+    body{
+        overflow-x:visible;
+        overflow-y:visible;
+    }
+    header, .faction, .faction_wrap, .guide, .showCase{
+        padding:5% 5%;
+    }
+    header{
+        position:fixed;
+        padding:0 5%;
+    }
+    header nav{
+        display:none;
+    }
+    header .burger{
+        float:right;
+        display:block;
+        right:30px;
+        top:23px;
+    }
+    .mobileMenu.show{
+        width:55%;
+    }
+    .visual{
+        height:55vh;
+    }
+    .visual .visualContent{
+        width:90%;
+        display:block;
+        left:10%;
+        top:20%;
+    }
+    .visual video{
+        width:55%;
+        height:10%;
+        margin: 0 0 30px 140px;
+    }
+    .visual .visualText{
+        width:50%;
+        margin:0 auto;
+        opacity:1;
+        margin-right:200px;
+    }
+    .visual .visualText h1{
+        margin-bottom:5%;
+    }
+    .visual .visualText a{
+        margin-top:3%;
+    }
+    
+    .faction_wrap{
+        flex-wrap:wrap;
+    }
+    .faction_wrap div{
+        width:45%;
+        height:35vh;
+        margin:35px 10px 35px 10px;
+    }
+    .guide{
+        padding:5% 0;
+    }
+    .playerGuide figure img{
+        width: 100%;
+    }
+    .playerGuide figcaption{
+        left:15%;
+        top:30%;
+    }
+    .playerGuide .pgLeft figcaption{
+        left:25%;
+    }
+    .playerGuide .pgRight figcaption{
+        left:15%;
+    }
+    .playerGuide figcaption h3{
+        text-align:center;
+        font-size:1em;
+    }
+    .playerGuide figcaption a{
+        text-align:center;
+        font-size:1em;
+    }
+    .playerGuide figcaption a{
+        margin-top:80px;
+        font-size:0.8rem;
+        padding:2% 4%;
+        background-color:#2981bb;
+    }
+    .playerGuide .pgLeft figcaption a{
+        margin-left:20px;
+    }
+    .playerGuide .pgRight figcaption a{
+        margin-left:30px;
+    }
+    .playerGuide figcaption p{
+        display:none;
+    }
+    aside{
+        display:none;
+    }
+    .showCase{
+        position:relative;
+    }
+    .showCase .shipInfo{
+        position:relative;
+        display:flex;
+        height:30vh;
+        overflow:hidden;
+        overflow-x:auto;
+        
+    }
+    .showCase .shipDetail{
+        position:absolute;
+        left:0;
+        top:0;
+    }
+    .showCase .shipInfo table{
+        height:25vh;
+        margin-left:5px;
+    }
+    .showCase .shipInfo .shipTable{
+        height:25vh;
+    }
+    .shipInfo .tableImg{
+        margin-top:10%;
+    }
+}
+/* --------------------- 414 --------------------- */
+@media(max-width:414px){
+    body{
+        overflow-x:visible;
+        overflow-y:visible;
+    }
+    header{
+        width:100%;
+        position:fixed;
+    }
+    header .burger{
+        transform:scale(0.7);
+        top:8px;
+    }
+    .mobileMenu{
+        top:30px;
+    }
+    .mobileMenu.show{
+        top:30px;
+        width:60%;
+    }
+    .visual{
+        height:50vw;
+    }
+    .visual .visualContent{
+        width:100%;
+        left:0;
+        top:30%;
+    }
+    .visual .visualText{
+        width:100%;
+    }
+    .visualContent .visualText h1{
+        font-size:1.2em;
+    }
+    .visualContent .visualText p{
+        font-size:0.8rem;
+    }
+    .visual video{
+        display:none;
+    }
+    .faction_title p{
+        font-size:1.5em;
+    }
+    .faction_wrap div figure:nth-of-type(1){
+        display:none;
+    }
+    .faction_wrap{
+        display:flex;
+        flex-wrap:wrap;
+        margin:0 auto;
+        padding:5% 0 0 5%; 
+    }
+    .faction_wrap div{
+        width:120px;
+        height:120px;
+    }
+    .faction_wrap div a{
+        width:100%;
+        height:100%;
+    }
+    .faction_wrap div figure .icon{
+        width:50%;
+        height:100%;
+    }
+    .faction_wrap div .front{
+        background:transparent
+    }
+    .guide{
+        padding:0 5%;
+    }
+    .guide h2{
+        font-size:1.5em;
+    }
+    .playerGuide figcaption{
+       margin-right:35px; 
+    }
+    .pgRight figcaption{
+        margin-right:20px;
+    }
+    .playerGuide figcaption h3{
+        font-size:0.7em;
+    }
+    .playerGuide figcaption a{
+        display:none;
+    }
+    .showCase{
+        padding:0 10%;
+    }
+    .showCase .sideImg{
+        margin-top:50px;
+    }
+    .showCase .shipInfo figure{
+        margin-top:20px;
+    }
+    footer div:nth-of-type(1){
+        display:block;
+        margin-left:30px;
+    }
+    footer div:nth-of-type(1) p{
+        margin-left:0;
+        margin-bottom:10px;
+    }
+    .footerMenu ul:nth-of-type(2){
+        display:none;
+    }
+}
+
+/* --------------------- 375 --------------------- */
+@media(max-width:375px){
+    body{
+        overflow-x:visible;
+        overflow-y:visible;
+    }
+    header{
+        width:100%;
+    }
+    header .burger{
+        transform:scale(0.7);
+        top:8px;
+    }
+    
+    .visual{
+        height:50vw;
+    }
+    .visual .visualContent{
+        width:100%;
+        left:0;
+        top:30%;
+    }
+    .visualContent .visualText h1{
+        font-size:1em;
+    }
+    .visualContent .visualText p{
+        font-size:0.6rem;
+    }
+    .visualContent .visualText a:nth-of-type(1){
+        margin-right:0;
+    }
+    .visualContent .visualText a{
+        font-size:0.5rem;
+    }
+    .visual video{
+        display:none;
+    }
+    .faction_title p{
+        font-size:1em;
+    }
+    .faction_wrap div figure:nth-of-type(1){
+        display:none;
+    }
+    .faction_wrap{
+        display:flex;
+        flex-wrap:wrap;
+        margin:0 auto;
+        padding:5% 0 0 12%; 
+    }
+    .faction_wrap div{
+        width:100px;
+        height:100px;
+    }
+    .faction_wrap div a{
+        width:100%;
+        height:100%;
+    }
+    .faction_wrap div figure .icon{
+        width:50%;
+        height:100%;
+    }
+    .faction_wrap div .front{
+        background:transparent
+    }
+    .guide{
+        padding:0 5%;
+    }
+    .guide h2{
+        font-size:1.5em;
+    }
+    .playerGuide figcaption{
+       margin-right:35px; 
+    }
+    .pgRight figcaption{
+        margin-right:20px;
+    }
+    .playerGuide figcaption h3{
+        font-size:0.7em;
+    }
+    .playerGuide figcaption a{
+        display:none;
+    }
+    .showCase{
+        padding:0 10%;
+    }
+    .showCase .sideImg{
+        margin-top:50px;
+    }
+    .showCase .shipInfo{
+        height:300px
+    }
+    .showCase .shipInfo table{
+        height:30px;
+    }
+    .showCase .shipInfo figure{
+        margin-top:20px;
+    }
+    footer div:nth-of-type(1){
+        display:block;
+        margin-left:50px;
+    }
+    footer div:nth-of-type(1) p{
+        margin-left:0;
+        margin-bottom:10px;
+    }
+    .footerMenu ul:nth-of-type(2){
+        display:none;
+    }
+}
+/* --------------------- 360 --------------------- */
+@media(max-width:360px){
+    body{
+        overflow-x:visible;
+        overflow-y:visible;
+    }
+    header{
+        width:100%;
+    }
+    header .burger{
+        transform:scale(0.7);
+        top:8px;
+    }
+    
+    .visual{
+        height:50vw;
+    }
+    .visual .visualContent{
+        width:70%;
+        left:30%;
+        top:30%;
+    }
+    .visualContent .visualText h1{
+        font-size:1em;
+    }
+    .visualContent .visualText p{
+        font-size:0.6rem;
+    }
+    .visualContent .visualText a:nth-of-type(1){
+        margin-right:0;
+    }
+    .visualContent .visualText a{
+        font-size:0.5rem;
+    }
+    .visual video{
+        display:none;
+    }
+    .faction_title p{
+        font-size:1em;
+    }
+    .faction_wrap div figure:nth-of-type(1){
+        display:none;
+    }
+    .faction_wrap{
+        display:flex;
+        flex-wrap:wrap;
+        margin:0 auto;
+        padding:5% 0 0 12%; 
+    }
+    .faction_wrap div{
+        width:100px;
+        height:100px;
+    }
+    .faction_wrap div a{
+        width:100%;
+        height:100%;
+    }
+    .faction_wrap div figure .icon{
+        width:50%;
+        height:100%;
+    }
+    .faction_wrap div .front{
+        background:transparent
+    }
+    .guide{
+        padding:0 5%;
+    }
+    .guide h2{
+        font-size:1.5em;
+    }
+    .playerGuide figcaption{
+       margin-right:35px; 
+    }
+    .pgRight figcaption{
+        margin-right:20px;
+    }
+    .playerGuide figcaption h3{
+        font-size:0.7em;
+    }
+    .playerGuide figcaption a{
+        display:none;
+    }
+    .showCase{
+        padding:0 10%;
+    }
+    .showCase .sideImg{
+        margin-top:50px;
+    }
+    .showCase .shipInfo figure{
+        margin-top:20px;
+    }
+    footer div:nth-of-type(1){
+        display:block;
+        margin-left:30px;
+    }
+    footer div:nth-of-type(1) p{
+        margin-left:0;
+        margin-bottom:10px;
+    }
+    .footerMenu ul:nth-of-type(2){
+        display:none;
+    }
+}
