@@ -900,7 +900,7 @@ footer div:nth-of-type(2) ul li a{
         width:60%;
     }
     .visual{
-        height:60vh;
+        height:80vh;
     }
     .visual .visualContent{
         width:100%;
@@ -922,7 +922,7 @@ footer div:nth-of-type(2) ul li a{
         margin-left:10%;
     }
     .visualText span{
-        font-size:1em;
+        font-size:2em;
     }
     .visualContent video{
         display:none;
@@ -973,7 +973,7 @@ footer div:nth-of-type(2) ul li a{
         display:none;
     }
     .showCase{
-        padding:0 10%;
+        padding:5% 10%;
     }
     .showCase .sideImg{
         margin-top:50px;
@@ -1022,7 +1022,7 @@ footer div:nth-of-type(2) ul li a{
         width:60%;
     }
     .visual{
-        height:60vh;
+        height:80vh;
     }
     .visual .visualContent{
         width:100%;
@@ -1095,7 +1095,7 @@ footer div:nth-of-type(2) ul li a{
         display:none;
     }
     .showCase{
-        padding:0 10%;
+        padding:10%;
     }
     .showCase .sideImg{
         margin-top:50px;
@@ -1143,7 +1143,7 @@ footer div:nth-of-type(2) ul li a{
         width:60%;
     }
     .visual{
-        height:60vh;
+        height:80vh;
     }
     .visual .visualContent{
         width:100%;
@@ -1216,7 +1216,7 @@ footer div:nth-of-type(2) ul li a{
         display:none;
     }
     .showCase{
-        padding:0 10%;
+        padding:10%;
     }
     .showCase .sideImg{
         margin-top:50px;
