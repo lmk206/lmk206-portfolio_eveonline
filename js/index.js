@@ -19,7 +19,6 @@ var mpj = window.matchMedia("screen and (min-width: 767px")
     if(mpj.matches){
         navControl();
         visualFade();
-        // mobileEvent();
         mobileSlide();
         $('#main').stop();
     }
@@ -28,7 +27,9 @@ var mpm = window.matchMedia("screen and (min-width: 319px")
         navControl();
         visualFade();
         mobileSlide();
-        // mobileEvent();
+        appear();
+        clearInterval();
+        $('.visual figure img').not(":first").hide();
         $('#main').stop();
     }
 
@@ -122,15 +123,17 @@ function mobileSlide(){
         loop()
         if(window.innerWidth < 1024){
             $('.visual figure img').not(":first").hide()
-            clearInterval(loop);
+            clearInterval();
             $('#main').stop();
         }
     };
 // visual text appear ---------------------------------------------------------------------
+    function appear(){
     $('.visual').on('mouseover',function(){
         $('.visual .visualText').addClass('visible')
     });
-
+    }
+    appear();
 // Faction ----------------------------------------------------------------------------
 // faction 컨텐츠 ------------------------------------------------------------------
     function facAction(){
