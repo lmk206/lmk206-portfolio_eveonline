@@ -157,7 +157,7 @@ burger.each(function(index){
                 }
             }; 
             loop()
-            if(window.innerWidth <= 1024){
+            if(window.innerWidth < 1024){
                 $('.visual figure img').not(":first").hide()
                 clearInterval(loop);
             }
