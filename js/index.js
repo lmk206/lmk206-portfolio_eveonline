@@ -34,6 +34,12 @@ var mpm = window.matchMedia("screen and (min-width: 319px")
     }
 
 // window scroll event ---------------------------------------------------------------- 
+// var a = $('.visual').height();
+
+// $('.visual').css({
+//     height:a
+// })
+
 
     function action(){
         var move = 0, num = 0, bln = true;
@@ -78,7 +84,6 @@ var mpm = window.matchMedia("screen and (min-width: 319px")
             e.preventDefault();
             $(this).toggleClass('active');
             $('.mobileMenu').toggleClass('show');
-            
         })
     });
 
@@ -202,14 +207,12 @@ function mobileSlide(){
             j($(this));
         })
         function k(t){
-           
             t.find('.front').addClass('active');
             t.find('figcaption').addClass('active');
             t.find('a').addClass('active');
             t.find('.s_bgf').addClass('active');
         };
         function j(t){
-            
             t.find('.front').removeClass('active');
             t.find('figcaption').removeClass('active');
             t.find('a').removeClass('active');

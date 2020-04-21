@@ -856,10 +856,9 @@ footer div:nth-of-type(2) ul li a{
     .showCase .shipInfo{
         position:relative;
         display:flex;
-        height:30vh;
+        height:40vw;
         overflow:hidden;
-        overflow-x:auto;
-        
+        overflow-x:auto; 
     }
     .showCase .shipDetail{
         position:absolute;
@@ -867,11 +866,14 @@ footer div:nth-of-type(2) ul li a{
         top:0;
     }
     .showCase .shipInfo table{
-        height:25vh;
+        height:25vw;
         margin-left:5px;
     }
+    .showCase .shipDetail figure{
+        margin-top:10px;
+    }
     .showCase .shipInfo .shipTable{
-        height:25vh;
+        height:25vw;
     }
     .shipInfo .tableImg{
         margin-top:10%;
@@ -902,7 +904,7 @@ footer div:nth-of-type(2) ul li a{
         width:60%;
     }
     .visual{
-        height:80vh;
+        height:150vw;
     }
     .visual .visualContent{
         width:100%;
@@ -938,6 +940,7 @@ footer div:nth-of-type(2) ul li a{
     .faction_wrap div{
         width:100%;
         height:45vw;
+        margin-bottom:100px;
     }
     .faction_wrap div a{
         width:100%;
@@ -979,6 +982,13 @@ footer div:nth-of-type(2) ul li a{
     }
     .showCase .sideImg{
         margin-top:50px;
+    }
+    .showCase .shipInfo{
+        position:relative;
+        display:flex;
+        height:60vw;
+        overflow:hidden;
+        overflow-x:auto; 
     }
     .showCase .shipInfo figure{
         margin-top:20px;
@@ -1060,6 +1070,7 @@ footer div:nth-of-type(2) ul li a{
     .faction_wrap div{
         width:100%;
         height:45vw;
+        margin-bottom:100px;
     }
     .faction_wrap div a{
         width:100%;
@@ -1101,6 +1112,13 @@ footer div:nth-of-type(2) ul li a{
     }
     .showCase .sideImg{
         margin-top:50px;
+    }
+    .showCase .shipInfo{
+        position:relative;
+        display:flex;
+        height:65vw;
+        overflow:hidden;
+        overflow-x:auto; 
     }
     .showCase .shipInfo figure{
         margin-top:20px;
@@ -1181,6 +1199,7 @@ footer div:nth-of-type(2) ul li a{
     .faction_wrap div{
         width:100%;
         height:45vw;
+        margin-bottom:100px;
     }
     .faction_wrap div a{
         width:100%;
