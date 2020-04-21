@@ -21,6 +21,7 @@ var mpj = window.matchMedia("screen and (min-width: 767px")
         visualFade();
         // mobileEvent();
         mobileSlide();
+        $('#main').stop();
     }
 var mpm = window.matchMedia("screen and (min-width: 319px")
     if(mpm.matches){
@@ -122,6 +123,7 @@ function mobileSlide(){
         if(window.innerWidth < 1024){
             $('.visual figure img').not(":first").hide()
             clearInterval(loop);
+            $('#main').stop();
         }
     };
 // visual text appear ---------------------------------------------------------------------
