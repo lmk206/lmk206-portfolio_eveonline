@@ -28,12 +28,9 @@ var mpm = window.matchMedia("screen and (min-width: 319px");
         $('#main').stop();
         visualFade();
         mobileSlide();
-        // navControl(); 
-        
-        // appear();
-        // clearInterval();
-        
-        
+        appear();
+        navControl(); 
+        clearInterval();
     }
 
 // window scroll event ---------------------------------------------------------------- 
