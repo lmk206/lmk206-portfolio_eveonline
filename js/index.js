@@ -11,6 +11,7 @@ $(function(){
             mobileSlide();
             mobileEvent();
             $('.visual figure img').not(":first").hide();
+            $("#main")[0].pause();
         }else{
             action();
             facAction();
