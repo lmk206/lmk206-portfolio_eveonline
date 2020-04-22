@@ -1,11 +1,10 @@
 window.addEventListener('DOMContentLoaded',function(){
-    // $('body').hide();
 
 //     //start
 $(function(){
 var mqP = window.matchMedia("screen and (min-width: 1025px)");
     // 데스크탑 모드 제어 입니다.
-    if(mqP.matches){
+    if($(window).width() > 1023){
         action();
         facAction();
         guideAction();
@@ -13,26 +12,29 @@ var mqP = window.matchMedia("screen and (min-width: 1025px)");
         showAction();
         mobileSlide();
         visualFade();
-        // mobileEvent();
     }
-var mpj = window.matchMedia("screen and (min-width: 767px");
-    if(mpj.matches){
-        navControl();
-        visualFade();
-        mobileSlide();
-        $('#main').stop();
-    }
-var mpm = window.matchMedia("screen and (min-width: 319px");
-    if($(window).width() > 319){
-        $('.visual figure img').not(":first").hide();
-        $('#main').stop();
-        visualFade();
-        mobileSlide();
-        appear();
-        navControl(); 
-        clearInterval();
-    }
+    
+    reactive();
+    function reactive(){
+        if($(window).width() > 767){
+            navControl();
+            visualFade();
+            mobileSlide();
+        }
 
+        if($(window).width() > 319 && $(window).width() < 768 ){
+            $('.visual figure img').not(":first").hide();
+            $('#main').stop();
+            $('#main').css({
+                display:none
+            })
+            visualFade();
+            mobileSlide();
+            appear();
+            navControl(); 
+            clearInterval();
+        }
+    }
 // window scroll event ---------------------------------------------------------------- 
 
     function action(){
