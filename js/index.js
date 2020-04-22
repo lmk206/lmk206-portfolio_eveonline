@@ -25,6 +25,7 @@ var mqP = window.matchMedia("screen and (min-width: 1025px)");
             $('.visual figure img').not(":first").hide();
             $('#main')[0].pause();
             mobileSlide();
+            mobileEvent()
         }
     }
 // window scroll event ---------------------------------------------------------------- 
@@ -330,16 +331,15 @@ function mobileSlide(){
             $('.slideShow .slideImg img').on("click",function(){
                 idx = $(this).index();
                 console.log($(index.portfolio)[idx]);
-                $('.shipInfo .shipTable').addClass('active');
-                $('.shipInfo .tableImg').addClass('active');
+                $('.shipInfo').addClass('active');
+               
                 
                 setTimeout(function(){
                     showCase(idx);
                 },500);
 
                 setTimeout(function(){
-                    $('.shipInfo .shipTable').removeClass('active');                 
-                    $('.shipInfo .tableImg').removeClass('active');
+                    $('.shipInfo').removeClass('active');                 
                 },600);
             })
             

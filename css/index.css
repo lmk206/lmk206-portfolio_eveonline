@@ -529,9 +529,7 @@ header .header_wrap{
     border-radius:5%;
     float:left;
 }
-.showCase .shipInfo.active{
-    opacity:0;
-}
+
 
 .showCase .shipInfo table th,tr,td{
     color:#fff;
@@ -566,13 +564,11 @@ header .header_wrap{
     opacity:1;
     transition:.5s;
 }
-.shipInfo .shipTable.active{
+.shipInfo.active .shipTable{
     opacity:0;
-    transition:.5s;
 }
-.shipInfo .tableImg.active{
+.shipInfo.active .tableImg{
     opacity:0;
-    transition:.5s;
 }
 
 /* ------------------------------ aside -------------------------------------- */
@@ -904,7 +900,7 @@ footer div:nth-of-type(2) ul li a{
         width:60%;
     }
     .visual{
-        height:150vw;
+        height:120vw;
     }
     .visual .visualContent{
         width:100%;
@@ -925,8 +921,8 @@ footer div:nth-of-type(2) ul li a{
         width:80%;
         margin-left:10%;
     }
-    .visualText span{
-        font-size:2em;
+    .visual .visualText span{
+        font-size:5em;
     }
     .visualContent video{
         display:none;
@@ -1034,7 +1030,7 @@ footer div:nth-of-type(2) ul li a{
         width:60%;
     }
     .visual{
-        height:150vw;
+        height:120vw;
     }
     .visual .visualContent{
         width:100%;
@@ -1163,7 +1159,7 @@ footer div:nth-of-type(2) ul li a{
         width:60%;
     }
     .visual{
-        height:150vw;
+        height:120vw;
     }
     .visual .visualContent{
         width:100%;
@@ -1255,6 +1251,44 @@ footer div:nth-of-type(2) ul li a{
     }
     footer div:nth-of-type(1) figure{
         margin-left:10%;
+    }
+    .footerMenu ul:nth-of-type(2){
+        display:none;
+    }
+}
+@media(max-width:320px){
+    body{
+        overflow-x:visible;
+        overflow-y:visible;
+    }
+    header{
+        width:100%;
+        position:fixed;
+    }
+    header .burger{
+        transform:scale(1);
+        top:18px;
+    }
+    .header_wrap figure{
+        width:35%;
+    }
+    .mobileMenu{
+        top:50px;
+    }
+    .mobileMenu.show{
+        top:50px;
+        width:60%;
+    }
+    footer div:nth-of-type(1){
+        display:block;
+        margin-left:0px;
+    }
+    footer div:nth-of-type(1) p{
+        margin-left:12%;
+        margin-bottom:10px;
+    }
+    footer div:nth-of-type(1) figure{
+        margin-left:15%;
     }
     .footerMenu ul:nth-of-type(2){
         display:none;
