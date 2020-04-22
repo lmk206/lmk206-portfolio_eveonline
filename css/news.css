@@ -299,3 +299,339 @@ footer div:nth-of-type(2) ul li a{
     text-align:center;
     margin-top:35px;
 }
+/* ---------------------- media -------------------------------------- */
+/* -------------------- 1024px ------------------- */
+@media(max-width:1024px){
+    body{
+        overflow-x:visible;
+        overflow-y:visible;
+    }
+    /* Header -------------------------------------------- */
+    .header_wrap nav ul li{
+        width:10%;
+    }
+    .header_wrap nav ul li > a{
+        font-size:0.6em;
+    }
+    .header_wrap nav ul li div a{
+        font-size:0.3em;
+        margin-top:20px;
+        line-height:50px;
+    }
+    /* Section -------------------------------------------- */
+    .sectionWrap .subject figure {
+        padding: 0 2%;
+    }
+    .content ul li{
+        padding:0 10px;
+    }
+    .patchNote, .scope, .trailer{
+        background-color:rgba(50,66,81,.7);
+        padding:5% 2%;
+        height:450px;
+        line-height:35px;
+    }
+    /* Footer --------------------------------------------- */
+    .sns{
+        margin-right:10%;
+    }
+    footer div:nth-of-type(1) p{
+        margin-left:8.5%
+    }
+    footer div:nth-of-type(2){
+        margin-top:1%;
+    }
+    footer div:nth-of-type(2) ul li a{
+        font-size:0.8em
+    }
+}
+/* --------------------- 768 --------------------- */
+@media(max-width:768px){
+    body{
+        overflow-x:visible;
+        overflow-y:visible;
+    }
+    header{
+        position:fixed;
+        padding:0 5%;
+    }
+    header nav{
+        display:none;
+    }
+    header .burger{
+        float:right;
+        display:block;
+        right:30px;
+        top:23px;
+    }
+    .mobileMenu.show{
+        width:55%;
+    }
+    /* Section -------------------------------------------- */
+    .sectionWrap .subject figure {
+        padding: 0 2%;
+    }
+    .figureControl figcaption a{
+        font-size:1rem;
+    }
+    .content ul{
+        display:block;
+    }
+    .content ul li{
+        padding:0 10px;
+    }
+    .patchNote, .scope, .trailer{
+        width:100%;
+        background-color:rgba(50,66,81,.7);
+        padding:5% 2%;
+        height:initial;
+        line-height:35px;
+    }
+    .patchNote div{
+        text-align:center;
+        margin-bottom:60px;
+    }
+    .patchNote div p,a{
+        font-size:1.5em;
+    }
+    .scope div{
+        text-align:center;
+    }
+    .scope .play{
+        left:47%;
+    }
+    .scope a{
+        width:100%;
+        height:100%;
+    }
+    .trailer a{
+        width:100%;
+        height:100%;
+    }
+    
+}
+/* --------------------- 414 --------------------- */
+@media(max-width:414px){
+    body{
+        overflow-x:visible;
+        overflow-y:visible;
+    }
+    header{
+        width:100%;
+        position:fixed;
+    }
+    header .burger{
+        transform:scale(1);
+        top:24px;
+    }
+    .header_wrap figure{
+        width:35%;
+    }
+    .mobileMenu{
+        top:60px;
+    }
+    .mobileMenu.show{
+        top:60px;
+        width:60%;
+    }
+    /* Section -------------------------------------------- */
+    .sectionWrap{
+        padding:20% 5% 5% 5%;
+    }
+    .sectionWrap .subject figure {
+        padding: 2%;
+    }
+    .sectionWrap .subject h1 {
+        color: #fff;
+        text-align: center;
+        font-size: 1.5em;
+        margin-bottom:0;
+        margin-top:20px;
+        color:#ffa500;
+    }
+    .sectionWrap .subject p{
+        text-align:center;
+    }
+    .sectionWrap .sectionTitle{
+        display:none;
+    }
+    .sectionWrap .figureControl {
+        display: block;
+    }
+    .figureControl figcaption a{
+        font-size:1rem;
+    }
+    .content ul{
+        display:block;
+    }
+    .content ul li{
+        padding:0 10px;
+    }
+    .patchNote, .scope, .trailer{
+        width:100%;
+        background-color:rgba(50,66,81,.7);
+        padding:5% 2%;
+        height:initial;
+        line-height:35px;
+    }
+    .patchNote div{
+        text-align:center;
+        margin-bottom:60px;
+    }
+    .patchNote div p,a{
+        font-size:1em;
+    }
+    .scope div{
+        text-align:center;
+    }
+    .scope .play{
+        left:45%;
+    }
+    .scope a{
+        width:100%;
+        height:100%;
+    }
+    .trailer a{
+        width:100%;
+        height:100%;
+    }
+    .conText p{
+        padding:0 2%;
+        line-height:50px;
+    }
+    footer div:nth-of-type(1){
+        display:block;
+        margin-left:30px;
+    }
+    footer div:nth-of-type(1) p{
+        margin-left:10%;
+        margin-bottom:10px;
+    }
+    footer div:nth-of-type(1) figure{
+        margin-left:14%;
+    }
+    .footerMenu ul:nth-of-type(2){
+        display:none;
+    }
+}
+
+/* --------------------- 375 --------------------- */
+@media(max-width:375px){
+    body{
+        overflow-x:visible;
+        overflow-y:visible;
+    }
+    header{
+        width:100%;
+        position:fixed;
+    }
+    header .burger{
+        transform:scale(1);
+        top:24px;
+    }
+    .header_wrap figure{
+        width:35%;
+    }
+    .mobileMenu{
+        top:60px;
+    }
+    .mobileMenu.show{
+        top:60px;
+        width:60%;
+    }
+    .patchNote div p,a{
+        font-size:0.9em;
+    }
+    footer div:nth-of-type(1){
+        display:block;
+        margin-left:30px;
+    }
+    footer div:nth-of-type(1) p{
+        margin-left:8%;
+        margin-bottom:10px;
+    }
+    footer div:nth-of-type(1) figure{
+        margin-left:10%;
+    }
+    .footerMenu ul:nth-of-type(2){
+        display:none;
+    }
+}
+/* --------------------- 360 --------------------- */
+@media(max-width:360px){
+    body{
+        overflow-x:visible;
+        overflow-y:visible;
+    }
+    header{
+        width:100%;
+        position:fixed;
+    }
+    header .burger{
+        transform:scale(1);
+        top:24px;
+    }
+    .header_wrap figure{
+        width:35%;
+    }
+    .mobileMenu{
+        top:60px;
+    }
+    .mobileMenu.show{
+        top:60px;
+        width:60%;
+    }
+    
+    footer div:nth-of-type(1){
+        display:block;
+        margin-left:30px;
+    }
+    footer div:nth-of-type(1) p{
+        margin-left:8%;
+        margin-bottom:10px;
+    }
+    footer div:nth-of-type(1) figure{
+        margin-left:10%;
+    }
+    .footerMenu ul:nth-of-type(2){
+        display:none;
+    }
+}
+@media(max-width:320px){
+    body{
+        overflow-x:visible;
+        overflow-y:visible;
+    }
+    header{
+        width:100%;
+        position:fixed;
+    }
+    header .burger{
+        transform:scale(1);
+        top:18px;
+    }
+    .header_wrap figure{
+        width:35%;
+    }
+    .mobileMenu{
+        top:50px;
+    }
+    .mobileMenu.show{
+        top:50px;
+        width:60%;
+    }
+    footer div:nth-of-type(1){
+        display:block;
+        margin-left:0px;
+    }
+    footer div:nth-of-type(1) p{
+        margin-left:12%;
+        margin-bottom:10px;
+    }
+    footer div:nth-of-type(1) figure{
+        margin-left:15%;
+    }
+    .footerMenu ul:nth-of-type(2){
+        display:none;
+    }
+}
