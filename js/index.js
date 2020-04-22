@@ -27,8 +27,9 @@ var mpm = window.matchMedia("screen and (min-width: 319px");
         $('.visual figure img').not(":first").hide();
         $('#main').stop();
         visualFade();
+        mobileSlide();
         // navControl(); 
-        // mobileSlide();
+        
         // appear();
         // clearInterval();
         
@@ -99,8 +100,8 @@ function navControl(){
 // 모바일 네비 제어 ----------------------------------------------------------------------
 function mobileSlide(){
     $('.mobileMenu li').on('click',function(){
-        alert("아이폰");
-        //$(this).find('div').slideToggle();
+        // alert("아이폰");
+        $(this).find('div').slideToggle();
     })
 }
 
@@ -113,7 +114,7 @@ function mobileSlide(){
         var idx = 0;
         var interval = 0;
         function loop(){
-            if(window.innerWidth > 1023){
+            if($(window).width() > 1023){
                 interval = setInterval(function(){
                     $('.visual figure img').eq(idx).fadeOut(1000);
                         idx++;
@@ -125,7 +126,7 @@ function mobileSlide(){
             }
         }; 
         loop()
-        if(window.innerWidth < 1024){
+        if($(window).width() < 1023){
             $('.visual figure img').not(":first").hide()
             clearInterval();
             $('#main').stop();
