@@ -48,7 +48,6 @@ window.addEventListener('DOMContentLoaded',function(){
     // 모바일 네비 제어 ----------------------------------------------------------------------
     function mobileSlide(){
         $('.mobileMenu ul li').on('click',function(){
-            // alert("아이폰");
             $(this).find('div').slideToggle();
         })
     }

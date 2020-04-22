@@ -183,18 +183,14 @@ header .header_wrap{
 }
 .mobileMenu ul li{
     padding:5% 5%;
+    color:#fff;
 }
 .mobileMenu li > div{
-    opacity:0;
-    height:0;
+    display:none;
+    height:100%;
     line-height:55px;
     margin-top:7%;
     margin-left:20px;
-    transition:.6s;
-}
-.mobileMenu div.show{
-    opacity:1;
-    height:100%;
 }
 .mobileMenu a{
     color:#fff;
