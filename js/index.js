@@ -24,13 +24,13 @@ var mpj = window.matchMedia("screen and (min-width: 767px")
     }
 var mpm = window.matchMedia("screen and (min-width: 319px")
     if(mpm.matches){
-        alert("아이폰");
-        navControl(); 
-        mobileSlide();
-        appear();
-        clearInterval();
-        $('.visual figure img').not(":first").hide();
-        $('#main').stop();
+        $('body').hide();
+        // navControl(); 
+        // mobileSlide();
+        // appear();
+        // clearInterval();
+        // $('.visual figure img').not(":first").hide();
+        // $('#main').stop();
     }
 
 // window scroll event ---------------------------------------------------------------- 
@@ -98,7 +98,7 @@ function navControl(){
 function mobileSlide(){
     $('.mobileMenu li').on('click',function(){
         alert("아이폰");
-        $(this).find('div').slideToggle();
+        //$(this).find('div').slideToggle();
     })
 }
 
