@@ -23,7 +23,7 @@ var mpj = window.matchMedia("screen and (min-width: 767px")
         $('#main').stop();
     }
 var mpm = window.matchMedia("screen and (min-width: 319px")
-    if(mpm.matches){
+    if($(window).width() > 319){
         $('body').hide();
         // navControl(); 
         // mobileSlide();
