@@ -1,8 +1,5 @@
-window.addEventListener('DOMContentLoaded',function(){
-
-//     //start
 $(function(){
-
+//     //start
     // 데스크탑 모드 제어 입니다.
     reactive();
         
@@ -467,5 +464,5 @@ function mobileSlide(){
             $(this).find('img').attr('src',snsChange2)
         })   
     }); // function end
-}); //Dom end
+
 
