@@ -26,6 +26,7 @@ var mpm = window.matchMedia("screen and (min-width: 319px");
     if($(window).width() > 319){
         $('.visual figure img').not(":first").hide();
         $('#main').stop();
+        visualFade();
         // navControl(); 
         // mobileSlide();
         // appear();
