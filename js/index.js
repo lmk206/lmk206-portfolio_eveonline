@@ -1,5 +1,5 @@
 window.addEventListener('DOMContentLoaded',function(){
-
+    $('body').hide();
 
 //     //start
 $(function(){
@@ -15,16 +15,16 @@ var mqP = window.matchMedia("screen and (min-width: 1025px)");
         visualFade();
         // mobileEvent();
     }
-var mpj = window.matchMedia("screen and (min-width: 767px")
+var mpj = window.matchMedia("screen and (min-width: 767px");
     if(mpj.matches){
         navControl();
         visualFade();
         mobileSlide();
         $('#main').stop();
     }
-var mpm = window.matchMedia("screen and (min-width: 319px")
+var mpm = window.matchMedia("screen and (min-width: 319px");
     if($(window).width() > 319){
-        $('body').hide();
+       
         // navControl(); 
         // mobileSlide();
         // appear();
