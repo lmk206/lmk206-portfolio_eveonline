@@ -1041,7 +1041,7 @@ footer div:nth-of-type(2) ul li a{
         width:100%;
     }
     .visualContent .visualText h1{
-        font-size:2.8em;
+        font-size:2.6em;
     }
     .visualContent .visualText p{
         font-size:1.8em;
@@ -1051,8 +1051,8 @@ footer div:nth-of-type(2) ul li a{
         width:80%;
         margin-left:10%;
     }
-    .visualText span{
-        font-size:1em;
+    .visual .visualText span{
+        font-size:4.5em;
     }
     .visualContent video{
         display:none;
@@ -1170,7 +1170,7 @@ footer div:nth-of-type(2) ul li a{
         width:100%;
     }
     .visualContent .visualText h1{
-        font-size:2.8em;
+        font-size:2.6em;
     }
     .visualContent .visualText p{
         font-size:1.4em;
@@ -1180,8 +1180,8 @@ footer div:nth-of-type(2) ul li a{
         width:80%;
         margin-left:10%;
     }
-    .visualText span{
-        font-size:1em;
+    .visual .visualText span{
+        font-size:4em;
     }
     .visualContent video{
         display:none;
