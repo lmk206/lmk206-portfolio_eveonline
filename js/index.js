@@ -1,5 +1,5 @@
 window.addEventListener('DOMContentLoaded',function(){
-    $('body').hide();
+    // $('body').hide();
 
 //     //start
 $(function(){
@@ -34,8 +34,6 @@ var mpm = window.matchMedia("screen and (min-width: 319px");
     }
 
 // window scroll event ---------------------------------------------------------------- 
-
-
 
     function action(){
         var move = 0, num = 0, bln = true;
