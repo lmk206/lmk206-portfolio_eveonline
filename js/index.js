@@ -24,8 +24,8 @@ var mpj = window.matchMedia("screen and (min-width: 767px")
     }
 var mpm = window.matchMedia("screen and (min-width: 319px")
     if(mpm.matches){
-        navControl();
-        visualFade();
+        alert("아이폰");
+        navControl(); 
         mobileSlide();
         appear();
         clearInterval();
@@ -34,11 +34,7 @@ var mpm = window.matchMedia("screen and (min-width: 319px")
     }
 
 // window scroll event ---------------------------------------------------------------- 
-// var a = $('.visual').height();
 
-// $('.visual').css({
-//     height:a
-// })
 
 
     function action(){
@@ -101,6 +97,7 @@ function navControl(){
 // 모바일 네비 제어 ----------------------------------------------------------------------
 function mobileSlide(){
     $('.mobileMenu li').on('click',function(){
+        alert("아이폰");
         $(this).find('div').slideToggle();
     })
 }
@@ -301,7 +298,7 @@ function mobileSlide(){
     }
 
 // ShowCase -------------------------------------------------------------------------------
-//showCase appear Event -----------------------------------------------------------------
+//showCase Event -----------------------------------------------------------------
     function showAction(){
         $(window).on('scroll',function(){
             var sTop = $(this).scrollTop();
