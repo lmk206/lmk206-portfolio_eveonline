@@ -24,13 +24,14 @@ var mpj = window.matchMedia("screen and (min-width: 767px");
     }
 var mpm = window.matchMedia("screen and (min-width: 319px");
     if($(window).width() > 319){
-       
+        $('.visual figure img').not(":first").hide();
+        $('#main').stop();
         // navControl(); 
         // mobileSlide();
         // appear();
         // clearInterval();
-        // $('.visual figure img').not(":first").hide();
-        // $('#main').stop();
+        
+        
     }
 
 // window scroll event ---------------------------------------------------------------- 
