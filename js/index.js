@@ -2,32 +2,25 @@ window.addEventListener('DOMContentLoaded',function(){
 
 //     //start
 $(function(){
-var mqP = window.matchMedia("screen and (min-width: 1025px)");
+
     // 데스크탑 모드 제어 입니다.
-    if($(window).width() > 1023){
-        action();
-        facAction();
-        guideAction();
-        navControl();
-        showAction();
-        visualFade();
+    reactive();
+        
+    function reactive(){
+        if($(window).width() > 315 && $(window).width() < 1024 ){
+            mobileSlide();
+            mobileEvent();
+        }else{
+            action();
+            facAction();
+            guideAction();
+            navControl();
+            showAction();
+            visualFade();
+            appear();
+        }
     }
     
-    reactive();
-    function reactive(){
-        if($(window).width() > 767){
-            navControl();
-            visualFade();
-            mobileSlide();
-        }
-
-        if($(window).width() > 319 && $(window).width() < 768 ){
-            $('.visual figure img').not(":first").hide();
-            $('#main')[0].pause();
-            mobileSlide();
-            mobileEvent()
-        }
-    }
 // window scroll event ---------------------------------------------------------------- 
 
     function action(){
@@ -90,7 +83,7 @@ function navControl(){
 // 모바일 네비 제어 ----------------------------------------------------------------------
 function mobileSlide(){
     $('.mobileMenu ul li').on('click',function(){
-        // alert("아이폰");
+        
         $(this).find('div').slideToggle();
     })
 }
@@ -128,7 +121,6 @@ function mobileSlide(){
         $('.visual .visualText').addClass('visible')
     });
     }
-    appear();
 // Faction ----------------------------------------------------------------------------
 // faction 컨텐츠 ------------------------------------------------------------------
     function facAction(){

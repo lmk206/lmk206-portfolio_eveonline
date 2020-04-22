@@ -2,18 +2,17 @@ window.addEventListener('DOMContentLoaded',function(){
 
     //     //start
     $(function(){
-    var mqP = window.matchMedia("screen and (min-width: 1025px)");
         // 데스크탑 모드 제어 입니다.
-        if($(window).width() > 1023){
-            navControl();
-        }
-        
         reactive();
+        
         function reactive(){
             if($(window).width() > 319 && $(window).width() < 1024 ){
                 mobileSlide();
+            }else{
+                navControl();
             }
         }
+
     // Header ------------------------------------------------------------------------------
     
     // 햄버거 제어 ----------------------------------------------------------------------
