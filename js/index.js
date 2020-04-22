@@ -10,6 +10,7 @@ $(function(){
         if($(window).width() > 315 && $(window).width() < 1024 ){
             mobileSlide();
             mobileEvent();
+            $('.visual figure img').not(":first").hide();
         }else{
             action();
             facAction();
