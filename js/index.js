@@ -10,7 +10,6 @@ var mqP = window.matchMedia("screen and (min-width: 1025px)");
         guideAction();
         navControl();
         showAction();
-        mobileSlide();
         visualFade();
     }
     
@@ -22,14 +21,10 @@ var mqP = window.matchMedia("screen and (min-width: 1025px)");
             mobileSlide();
         }
 
-        if($(window).width() > 319 || $(window).width() < 768 ){
+        if($(window).width() > 319 && $(window).width() < 768 ){
             $('.visual figure img').not(":first").hide();
-            $('#main').stop();
-            visualFade();
+            $('#main')[0].pause();
             mobileSlide();
-            appear();
-            navControl(); 
-            clearInterval();
         }
     }
 // window scroll event ---------------------------------------------------------------- 
@@ -93,7 +88,7 @@ function navControl(){
 }   
 // 모바일 네비 제어 ----------------------------------------------------------------------
 function mobileSlide(){
-    $('.mobileMenu li').on('click',function(){
+    $('.mobileMenu ul li').on('click',function(){
         // alert("아이폰");
         $(this).find('div').slideToggle();
     })
