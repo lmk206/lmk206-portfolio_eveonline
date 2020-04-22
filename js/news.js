@@ -10,12 +10,7 @@ window.addEventListener('DOMContentLoaded',function(){
         
         reactive();
         function reactive(){
-            if($(window).width() > 767){
-                navControl();
-                mobileSlide();
-            }
-    
-            if($(window).width() > 319 && $(window).width() < 768 ){
+            if($(window).width() > 319 && $(window).width() < 1024 ){
                 mobileSlide();
             }
         }

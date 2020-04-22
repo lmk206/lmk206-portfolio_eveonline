@@ -10,12 +10,7 @@ window.addEventListener('DOMContentLoaded',function(){
         
         reactive();
         function reactive(){
-            if($(window).width() > 767){
-                navControl();
-                mobileSlide();
-            }
-    
-            if($(window).width() > 319 && $(window).width() < 768 ){
+            if($(window).width() > 319 && $(window).width() < 1024 ){
                 mobileSlide();
             }
         }
@@ -49,7 +44,6 @@ window.addEventListener('DOMContentLoaded',function(){
     // 모바일 네비 제어 ----------------------------------------------------------------------
     function mobileSlide(){
         $('.mobileMenu ul li').on('click',function(){
-            // alert("아이폰");
             $(this).find('div').slideToggle();
         })
     }
