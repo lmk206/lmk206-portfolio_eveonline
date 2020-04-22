@@ -24,7 +24,6 @@ var mqP = window.matchMedia("screen and (min-width: 1025px)");
         if($(window).width() > 319 && $(window).width() < 768 ){
             $('.visual figure img').not(":first").hide();
             $('#main')[0].pause();
-            // $("#magin")[0].hide();
             mobileSlide();
         }
     }
