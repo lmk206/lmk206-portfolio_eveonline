@@ -929,7 +929,8 @@ footer div:nth-of-type(2) ul li a{
         font-size:2em;
     }
     .visualContent video{
-        display:none;
+        /* display:none; */
+        opacity:0;
     }
     .faction_title p{
         font-size:1.5em;
@@ -1059,7 +1060,8 @@ footer div:nth-of-type(2) ul li a{
         font-size:1em;
     }
     .visualContent video{
-        display:none;
+        /* display:none; */
+        opacity:0;
     }
     .faction_title p{
         font-size:1.5em;
@@ -1188,7 +1190,8 @@ footer div:nth-of-type(2) ul li a{
         font-size:1em;
     }
     .visualContent video{
-        display:none;
+        /* display:none; */
+        opacity:0;
     }
     .faction_title p{
         font-size:1.5em;
