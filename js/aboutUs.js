@@ -11,6 +11,7 @@ window.addEventListener('DOMContentLoaded',function(){
         }else{
             navControl();
         }
+        show();
     }
     // Header ------------------------------------------------------------------------------
     
@@ -30,18 +31,15 @@ window.addEventListener('DOMContentLoaded',function(){
     // 네비게이션 제어 ----------------------------------------------------------------------
     function navControl(){
         $('nav ul li').on('mouseover',function(){
-            // $(this).find('div').addClass('show');
-            $('.navBg div').slideDown()
+            $('.navBg div').stop().slideDown()
         })
         $('nav ul li').on('mouseleave',function(){
-            // $(this).find('div').removeClass('show');
             $('.navBg div').stop().slideUp()
         });
     }   
     // 모바일 네비 제어 ----------------------------------------------------------------------
     function mobileSlide(){
         $('.mobileMenu ul li').on('click',function(){
-            // alert("아이폰");
             $(this).find('div').slideToggle();
         })
     }
@@ -51,8 +49,6 @@ window.addEventListener('DOMContentLoaded',function(){
     function show(){
         $('.sectionWrap h1').addClass('show')
     }
-    show();
-    
     // button arrow even -----------------------------------------
     $('.firstCon a').on('mouseenter',function(){
         $(this).find('img').addClass('active')

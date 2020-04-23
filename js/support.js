@@ -11,6 +11,9 @@ window.addEventListener('DOMContentLoaded',function(){
         }else{
             navControl();
         }
+    // 사이즈에 상관없이 작동하는 함수
+        div();
+        li();
     }
     // Header ------------------------------------------------------------------------------
     
@@ -31,7 +34,7 @@ window.addEventListener('DOMContentLoaded',function(){
     function navControl(){
         $('nav ul li').on('mouseover',function(){
             // $(this).find('div').addClass('show');
-            $('.navBg div').slideDown()
+            $('.navBg div').stop().slideDown()
         })
         $('nav ul li').on('mouseleave',function(){
             // $(this).find('div').removeClass('show');
@@ -45,42 +48,42 @@ window.addEventListener('DOMContentLoaded',function(){
             $(this).find('div').slideToggle();
         })
     }
-    // section -----------------------------------------------------------
+    // section ---------------------------------------------------------------------
 
     //box content ----------------------------------------------------------------------
-
-    div();
-    li();
 
     function div(){
     $('article div').on('mouseenter',function(){
         this.classList.add('active');
     })
-    $('.question div').on('mouseenter',function(){
-        this.classList.add('active');
-    })
     $('article div').on('mouseleave',function(){
-        this.classList.remove('active')
-    })
-    $('.question div').on('mouseleave',function(){
         this.classList.remove('active')
     })
     $('article div').on('click',function(){
         $(this).find('ul').slideToggle()       
     })
+
+    $('.question div').on('mouseenter',function(){
+        this.classList.add('active');
+    })
+    $('.question div').on('mouseleave',function(){
+        this.classList.remove('active')
+    })
     $('.question div').on('click',function(){
         $(this).find('ul').slideToggle();
     })
     }
+
     function li(){
     $('article div li').on('mouseenter',function(){
         $(this).addClass('active');
     })
-    $('.question div li').on('mouseenter',function(){
-        this.classList.add('active');
-    })
     $('article div li').on('mouseleave',function(){
         $(this).removeClass('active');
+    })
+    
+    $('.question div li').on('mouseenter',function(){
+        this.classList.add('active');
     })
     $('.question div li').on('mouseleave',function(){
         this.classList.remove('active')

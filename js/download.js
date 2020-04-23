@@ -31,7 +31,7 @@ window.addEventListener('DOMContentLoaded',function(){
     function navControl(){
         $('nav ul li').on('mouseover',function(){
             // $(this).find('div').addClass('show');
-            $('.navBg div').slideDown()
+            $('.navBg div').stop().slideDown()
         })
         $('nav ul li').on('mouseleave',function(){
             // $(this).find('div').removeClass('show');
@@ -58,12 +58,20 @@ window.addEventListener('DOMContentLoaded',function(){
         var j = 0;
 
         for(let i = 0;i<tabCon.length;i++){
-            
+            tabCon[0].classList.add('show');
+            console.log(tabCon[0])
             tabLi[i].addEventListener('click',function(){
                 tabLi[j].classList.remove("active");
                 tabCon[j].classList.remove("active");
+                tabCon[j].classList.remove('show');
+                setTimeout(function(){
+                    tabCon[i].classList.add("active");
+                },200)
                 this.classList.add("active");
-                tabCon[i].classList.add("active");
+                setTimeout(function(){ 
+                    tabCon[i].classList.add('show');
+                },500)
+                
                 j=i;
             });
         }

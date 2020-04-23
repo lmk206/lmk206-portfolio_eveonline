@@ -4,7 +4,7 @@ $(function(){
     reactive();
         
     function reactive(){
-        if($(window).width() > 315 && $(window).width() < 1024 ){
+        if($(window).width() > 315 && $(window).width() < 650 ){
             mobileSlide();
             mobileEvent();
             $('.visual figure img').not(":first").hide();
@@ -71,11 +71,9 @@ $(function(){
 // 네비게이션 제어 ----------------------------------------------------------------------
 function navControl(){
     $('nav ul li').on('mouseover',function(){
-        // $(this).find('div').addClass('show');
-        $('.navBg div').slideDown()
+        $('.navBg div').stop().slideDown()
     })
     $('nav ul li').on('mouseleave',function(){
-        // $(this).find('div').removeClass('show');
         $('.navBg div').stop().slideUp()
     });
 }   

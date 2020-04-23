@@ -328,3 +328,310 @@ footer div:nth-of-type(2) ul li a{
     text-align:center;
     margin-top:35px;
 }
+
+/* ---------------------- media -------------------------------------- */
+/* -------------------- 1024px ------------------- */
+@media(max-width:1024px){
+    body{
+        overflow-x:visible;
+        overflow-y:visible;
+    }
+    /* Header -------------------------------------------- */
+    .header_wrap nav ul li{
+        width:10%;
+    }
+    .header_wrap nav ul li > a{
+        font-size:0.6em;
+    }
+    .header_wrap nav ul li div a{
+        font-size:0.3em;
+        margin-top:20px;
+        line-height:50px;
+    }
+    /* Section -------------------------------------------- */
+    .sectionWrap{
+        padding:15% 2%;
+    }
+    .container{
+        margin-left:0;
+        padding:0 0 0 10%;
+    }
+    .container figure{
+        padding:0;
+        margin:1%;
+    }
+    .container figure h1 {
+        color: #fff;
+        text-align: center;
+        margin-bottom:10px;
+        font-size:0.9em;
+    }
+    .container figure a{
+        height:90%;
+    }
+    .container figcaption{
+        width:100%;
+        left:0;
+        line-height:20px;
+    }
+    .container figcaption strong{
+        font-size:0.9em;
+    }
+    .container figcaption p{
+        font-size:0.8em;
+    }
+    .container figcaption span{
+        font-size:0.7em;
+    }
+    .container figcaption a{
+        font-size:0.6em;
+    }
+    /* Footer --------------------------------------------- */
+    .sns{
+        margin-right:10%;
+    }
+    footer div:nth-of-type(1) p{
+        margin-left:8.5%
+    }
+    footer div:nth-of-type(2){
+        margin-top:1%;
+    }
+    footer div:nth-of-type(2) ul li a{
+        font-size:0.8em
+    }
+}
+/* --------------------- 768 --------------------- */
+@media(max-width:768px){
+    body{
+        overflow-x:visible;
+        overflow-y:visible;
+    }
+    header{
+        position:fixed;
+        padding:0 5%;
+    }
+    header nav{
+        display:none;
+    }
+    header .burger{
+        float:right;
+        display:block;
+        right:30px;
+        top:23px;
+    }
+    .mobileMenu.show{
+        width:55%;
+    }
+    /* Section -------------------------------------------- */
+    .container figure{
+        width:40%;
+    }
+}
+/* --------------------- 414 --------------------- */
+@media(max-width:480px){
+    body{
+        overflow-x:visible;
+        overflow-y:visible;
+    }
+    header{
+        width:100%;
+        position:fixed;
+    }
+    header .burger{
+        transform:scale(1);
+        top:24px;
+    }
+    .header_wrap figure{
+        width:35%;
+    }
+    .mobileMenu{
+        top:60px;
+    }
+    .mobileMenu.show{
+        top:60px;
+        width:60%;
+    }
+    /* Section -------------------------------------------- */
+    .sectionWrap > h1{
+        margin-bottom:0;
+    }
+    .sectionWrap h1{
+        margin-left:0;
+        text-align:center;
+        margin-top:10%;
+    }
+    .container{
+        margin-left:0;
+        padding:0 2%;
+    }
+    .container figure{
+        padding:0;
+        margin:1%;
+        width:100%
+    }
+    .container figure h1 {
+        color: #fff;
+        text-align: center;
+        margin-bottom:10px;
+        font-size:1.2em;
+    }
+    .container figure a{
+        height:initial;
+    }
+    .container figcaption{
+        width:100%;
+        left:0;
+        line-height:30px;
+        position:static;
+        opacity:1;
+    }
+    .container figcaption strong{
+        font-size:1.2em;
+    }
+    .container figcaption p{
+        font-size:1em;
+    }
+    .container figcaption span{
+        font-size:0.9em;
+    }
+    .container figcaption a{
+        font-size:1em;
+    }
+    footer div:nth-of-type(1){
+        display:block;
+        text-align:center;
+    }
+    footer div:nth-of-type(1) p{
+        margin-left:0;
+        margin-bottom:10px;
+    }
+    footer div:nth-of-type(1) figure{
+        margin-left:0;
+        margin-right:0;
+    }
+    .footerMenu ul:nth-of-type(2){
+        display:none;
+    }
+}
+
+/* --------------------- 375 --------------------- */
+@media(max-width:375px){
+    body{
+        overflow-x:visible;
+        overflow-y:visible;
+    }
+    header{
+        width:100%;
+        position:fixed;
+    }
+    header .burger{
+        transform:scale(1);
+        top:24px;
+    }
+    .header_wrap figure{
+        width:35%;
+    }
+    .mobileMenu{
+        top:60px;
+    }
+    .mobileMenu.show{
+        top:60px;
+        width:60%;
+    }
+   
+    footer div:nth-of-type(1){
+        display:block;
+        text-align:center;
+    }
+    footer div:nth-of-type(1) p{
+        margin-left:0;
+        margin-bottom:10px;
+    }
+    footer div:nth-of-type(1) figure{
+        margin-left:0;
+        margin-right:0;
+    }
+    .footerMenu ul:nth-of-type(2){
+        display:none;
+    }
+}
+/* --------------------- 360 --------------------- */
+@media(max-width:360px){
+    body{
+        overflow-x:visible;
+        overflow-y:visible;
+    }
+    header{
+        width:100%;
+        position:fixed;
+    }
+    header .burger{
+        transform:scale(1);
+        top:24px;
+    }
+    .header_wrap figure{
+        width:35%;
+    }
+    .mobileMenu{
+        top:60px;
+    }
+    .mobileMenu.show{
+        top:60px;
+        width:60%;
+    }
+    
+    footer div:nth-of-type(1){
+        display:block;
+        text-align:center;
+    }
+    footer div:nth-of-type(1) p{
+        margin-left:0;
+        margin-bottom:10px;
+    }
+    footer div:nth-of-type(1) figure{
+        margin-left:0;
+        margin-right:0;
+    }
+    .footerMenu ul:nth-of-type(2){
+        display:none;
+    }
+}
+@media(max-width:320px){
+    body{
+        overflow-x:visible;
+        overflow-y:visible;
+    }
+    header{
+        width:100%;
+        position:fixed;
+    }
+    header .burger{
+        transform:scale(1);
+        top:18px;
+    }
+    .header_wrap figure{
+        width:35%;
+    }
+    .mobileMenu{
+        top:50px;
+    }
+    .mobileMenu.show{
+        top:50px;
+        width:60%;
+    }
+    footer div:nth-of-type(1){
+        display:block;
+        text-align:center;
+    }
+    footer div:nth-of-type(1) p{
+        margin-left:0;
+        margin-bottom:10px;
+    }
+    footer div:nth-of-type(1) figure{
+        margin-left:0;
+        margin-right:0;
+    }
+    .footerMenu ul:nth-of-type(2){
+        display:none;
+    }
+}

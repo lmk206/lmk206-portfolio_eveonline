@@ -256,15 +256,13 @@ section{
 }
 .conText span{
     color:#fff;
+    font-weight:600;
+    font-size:1.2em;
 }
 .conText ul li{
     color:#fff;
     list-style-type:disc;
     margin-left:5%;
-}
-.conText span{
-    font-weight:600;
-    font-size:1.2em;
 }
 .note{
     width:30%;
@@ -279,7 +277,7 @@ section{
     color:#fff;
     font-size:1.5em;
 }
-.patchNote, .scope, .trailer{
+.patchNote, .scope, .trailer1{
     background-color:rgba(50,66,81,.7);
     padding:3%;
     width:100%;
@@ -294,14 +292,14 @@ section{
 }
 .patchNote p{
     color:#ccc;
-    font-size:0.9rem;
+    font-size:1rem;
 }
 .patchNote a{
     color:#fff;
 }
 .scope{
     width:100%;
-    height:400px;
+    height:430px;
 }
 .scope div{
     position:relative;
@@ -324,7 +322,7 @@ section{
     height:45px;
 }
 .trailer{
-    margin-top:60px;
+    margin-top:30px;
 }
 .trailer1{
     opacity:0.8;
@@ -377,4 +375,395 @@ footer div:nth-of-type(2) ul li a{
     color:#ccc;
     text-align:center;
     margin-top:35px;
+}
+/* ---------------------- media -------------------------------------- */
+/* -------------------- 1024px ------------------- */
+@media(max-width:1024px){
+    body{
+        overflow-x:visible;
+        overflow-y:visible;
+    }
+    /* Header -------------------------------------------- */
+    .header_wrap nav ul li{
+        width:10%;
+    }
+    .header_wrap nav ul li > a{
+        font-size:0.6em;
+    }
+    .header_wrap nav ul li div a{
+        font-size:0.3em;
+        margin-top:20px;
+        line-height:50px;
+    }
+    /* Section -------------------------------------------- */
+    .sectionWrap{
+        padding:5%;
+    }
+    .sectionWrap .subject figure {
+        padding: 0 2%;
+    }
+    .content ul li{
+        padding:0 10px;
+    }
+    .note{
+        width:50%;
+    }
+    .patchNote, .scope, .trailer1{
+        background-color:rgba(50,66,81,.7);
+        width:100%;
+        padding:5% 0%;
+        line-height:35px;
+    }
+    /* Footer --------------------------------------------- */
+    .sns{
+        margin-right:10%;
+    }
+    footer div:nth-of-type(1) p{
+        margin-left:8.5%
+    }
+    footer div:nth-of-type(2){
+        margin-top:1%;
+    }
+    footer div:nth-of-type(2) ul li a{
+        font-size:0.8em
+    }
+}
+/* --------------------- 768 --------------------- */
+@media(max-width:768px){
+    body{
+        overflow-x:visible;
+        overflow-y:visible;
+    }
+    header{
+        position:fixed;
+        padding:0 5%;
+    }
+    header nav{
+        display:none;
+    }
+    header .burger{
+        float:right;
+        display:block;
+        right:30px;
+        top:23px;
+    }
+    .mobileMenu.show{
+        width:55%;
+    }
+    /* Section -------------------------------------------- */
+    .note{
+        width:50%;
+        padding:4% 0;
+    }
+    .sectionWrap .subject figure {
+        padding: 0 2%;
+    }
+    .figureControl figcaption a{
+        font-size:1rem;
+    }
+    .content ul{
+        display:block;
+    }
+    .content ul li{
+        padding:0 10px;
+    }
+    .conText ul{
+        font-size:1em;
+    }
+    .conText p, .conText span{
+        font-size:1rem;
+        margin-top:10px;
+    }
+    .patchNote, .scope, .trailer1{
+        width:100%;
+        background-color:rgba(50,66,81,.7);
+        padding:5% 2%;
+        height:initial;
+        line-height:35px;
+    }
+    .patchNote div{
+        text-align:center;
+        margin-bottom:60px;
+    }
+    .patchNote div p,a{
+        font-size:1em;
+    }
+    .scope div{
+        text-align:center;
+    }
+    .scope .play{
+        left:45%;
+        top:25%;
+        width:30px;
+        height:35px;
+    }
+    .scope a{
+        width:100%;
+        height:100%;
+    }
+    .trailer a{
+        width:100%;
+        height:100%;
+    }
+    .trailer img{
+        margin-top:0;
+    }
+    
+}
+/* --------------------- 414 --------------------- */
+@media(max-width:480px){
+    body{
+        overflow-x:visible;
+        overflow-y:visible;
+    }
+    header{
+        width:100%;
+        position:fixed;
+    }
+    header .burger{
+        transform:scale(1);
+        top:24px;
+    }
+    .header_wrap figure{
+        width:35%;
+    }
+    .mobileMenu{
+        top:60px;
+    }
+    .mobileMenu.show{
+        top:60px;
+        width:60%;
+    }
+    /* Section -------------------------------------------- */
+    .sectionWrap{
+        padding:20% 5%;
+        display:block;
+    }
+    .sectionWrap .subject figure {
+        padding: 2%;
+    }
+    .sectionWrap .subject h1 {
+        color: #fff;
+        text-align: center;
+        font-size: 1.5em;
+        margin-bottom:0;
+        margin-top:20px;
+        color:#ffa500;
+    }
+    .sectionWrap .subject p{
+        text-align:center;
+    }
+    .sectionWrap .sectionTitle{
+        display:none;
+    }
+    .sectionWrap .figureControl {
+        display: block;
+    }
+    .sectionCon{
+        width:100%;
+    }
+    .figureControl figcaption a{
+        font-size:1rem;
+    }
+    .content ul{
+        display:block;
+    }
+    .content ul li{
+        padding:0 10px;
+    }
+    .note{
+        width:100%;
+    }
+    .note ul{
+        margin-left:0;
+    }
+    .note ul li{
+        margin-top:35px;
+    }
+    .patchNote, .scope, .trailer1{
+        width:100%;
+        background-color:rgba(50,66,81,.7);
+        padding:5% 2%;
+        height:initial;
+        line-height:35px;
+    }
+    .patchNote div{
+        text-align:center;
+        margin-bottom:60px;
+    }
+    .patchNote div p,a{
+        font-size:1em;
+    }
+    .scope div{
+        text-align:center;
+        margin-top:20px;
+    }
+    .scope .play{
+        left:45%;
+        width:45px;
+        height:50px;
+    }
+    .scope a{
+        width:100%;
+        height:100%;
+    }
+    .trailer a{
+        width:100%;
+        height:100%;
+    }
+    .conText p{
+        padding:0 2%;
+        line-height:25px;
+    }
+    footer div:nth-of-type(1){
+        display:block;
+        text-align:center;
+    }
+    footer div:nth-of-type(1) p{
+        margin-left:0;
+        margin-bottom:10px;
+    }
+    footer div:nth-of-type(1) figure{
+        margin-left:0;
+        margin-right:0;
+    }
+    .footerMenu ul:nth-of-type(2){
+        display:none;
+    }
+}
+
+/* --------------------- 375 --------------------- */
+@media(max-width:375px){
+    body{
+        overflow-x:visible;
+        overflow-y:visible;
+    }
+    header{
+        width:100%;
+        position:fixed;
+    }
+    header .burger{
+        transform:scale(1);
+        top:24px;
+    }
+    .header_wrap figure{
+        width:35%;
+    }
+    .mobileMenu{
+        top:60px;
+    }
+    .mobileMenu.show{
+        top:60px;
+        width:60%;
+    }
+    .sectionWrap .subject h1 {
+        font-size: 1.8em;
+    }
+    .sectionWrap .subject p{
+        font-size:1em;
+    }
+    .patchNote div p,a{
+        font-size:0.9em;
+    }
+    footer div:nth-of-type(1){
+        display:block;
+        text-align:center;
+    }
+    footer div:nth-of-type(1) p{
+        margin-left:0;
+        margin-bottom:10px;
+    }
+    footer div:nth-of-type(1) figure{
+        margin-left:0;
+        margin-right:0;
+    }
+    .footerMenu ul:nth-of-type(2){
+        display:none;
+    }
+}
+/* --------------------- 360 --------------------- */
+@media(max-width:360px){
+    body{
+        overflow-x:visible;
+        overflow-y:visible;
+    }
+    header{
+        width:100%;
+        position:fixed;
+    }
+    header .burger{
+        transform:scale(1);
+        top:24px;
+    }
+    .header_wrap figure{
+        width:35%;
+    }
+    .mobileMenu{
+        top:60px;
+    }
+    .mobileMenu.show{
+        top:60px;
+        width:60%;
+    }
+    
+    footer div:nth-of-type(1){
+        display:block;
+        text-align:center;
+    }
+    footer div:nth-of-type(1) p{
+        margin-left:0;
+        margin-bottom:10px;
+    }
+    footer div:nth-of-type(1) figure{
+        margin-left:0;
+        margin-right:0;
+    }
+    .footerMenu ul:nth-of-type(2){
+        display:none;
+    }
+}
+@media(max-width:320px){
+    body{
+        overflow-x:visible;
+        overflow-y:visible;
+    }
+    header{
+        width:100%;
+        position:fixed;
+    }
+    header .burger{
+        transform:scale(1);
+        top:18px;
+    }
+    .header_wrap figure{
+        width:35%;
+    }
+    .mobileMenu{
+        top:50px;
+    }
+    .mobileMenu.show{
+        top:50px;
+        width:60%;
+    }
+    .sectionWrap .subject h1 {
+        font-size: 1.5em;
+    }
+    .sectionWrap .subject p{
+        font-size:0.7em;
+    }
+    footer div:nth-of-type(1){
+        display:block;
+        text-align:center;
+    }
+    footer div:nth-of-type(1) p{
+        margin-left:0;
+        margin-bottom:10px;
+    }
+    footer div:nth-of-type(1) figure{
+        margin-left:0;
+        margin-right:0;
+    }
+    .footerMenu ul:nth-of-type(2){
+        display:none;
+    }
 }

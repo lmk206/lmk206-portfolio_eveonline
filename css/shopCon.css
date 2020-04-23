@@ -199,7 +199,7 @@ header .header_wrap{
 /* --------------------- section ------------------------- */
 section{
     background:url('../img/bg_background7.jpg')no-repeat;
-    background-size:100%;
+    background-size:cover;
     background-attachment:fixed;
 }
 
@@ -386,4 +386,383 @@ footer div:nth-of-type(2) ul li a{
     color:#ccc;
     text-align:center;
     margin-top:35px;
+}
+
+/* ---------------------- media -------------------------------------- */
+/* -------------------- 1024px ------------------- */
+@media(max-width:1024px){
+    body{
+        overflow-x:visible;
+        overflow-y:visible;
+    }
+    /* Header -------------------------------------------- */
+    .header_wrap figure{
+        width:30%;
+    }
+    .header_wrap nav ul li{
+        width:100%;
+    }
+    .header_wrap nav ul{
+        margin-top:25px;
+    }
+    .header_wrap nav ul li > a{
+        font-size:0.9em;
+    }
+    .header_wrap nav ul li div a{
+        font-size:0.3em;
+        margin-top:20px;
+        line-height:50px;
+    }
+    /* Section -------------------------------------------- */
+    .sectionWrap{
+        padding:15% 2%;
+    }
+    .sectionWrap > h1 {
+        margin:2% 5%;
+    }
+    .sectionWrap .sectionTitle{
+        margin:2% 5%;
+    }
+    .sectionWrap .tabCon{
+        margin:2% 5%;
+    }
+    .container{
+        margin-left:0;
+        padding:2% 0 0 5%;
+    }
+    .container figure{
+        padding:0;
+        margin:1%;
+    }
+    .container figure h1 {
+        color: #fff;
+        text-align: center;
+        margin-bottom:10px;
+        font-size:0.9em;
+    }
+    .container figure a{
+        height:90%;
+    }
+    .container figcaption{
+        width:100%;
+        left:0;
+        line-height:20px;
+    }
+    .container figcaption strong{
+        font-size:0.9em;
+    }
+    .container figcaption p{
+        font-size:0.8em;
+    }
+    .container figcaption span{
+        font-size:0.7em;
+    }
+    .container figcaption a{
+        font-size:0.6em;
+    }
+    .advantage{
+        margin-left:5%;
+    }
+    .advantage.show{
+        margin-left:5%;
+    }
+    .content div svg {
+        margin-left:70px;
+    }
+    .content div p{
+        font-size:1em;
+    }
+    /* Footer --------------------------------------------- */
+    .sns{
+        margin-right:10%;
+    }
+    footer div:nth-of-type(1) p{
+        margin-left:8.5%
+    }
+    footer div:nth-of-type(2){
+        margin-top:1%;
+    }
+    footer div:nth-of-type(2) ul li a{
+        font-size:0.8em
+    }
+}
+/* --------------------- 768 --------------------- */
+@media(max-width:768px){
+    body{
+        overflow-x:visible;
+        overflow-y:visible;
+    }
+    header{
+        position:fixed;
+        padding:0 5%;
+    }
+    header nav{
+        display:none;
+    }
+    header .burger{
+        float:right;
+        display:block;
+        right:30px;
+        top:35px;
+    }
+    .mobileMenu.show{
+        width:55%;
+    }
+    /* Section -------------------------------------------- */
+    
+    .container figure{
+        width:45%;
+    }
+    .container figure h1 {
+        font-size: 1.2em;
+    }
+    .advantage{
+        margin-left:5%;
+    }
+    .advantage.show{
+        margin-left:5%;
+    }
+    .content div svg {
+        margin-left:40px;
+    }
+    .content div p{
+        font-size:1em;
+    }
+}
+/* --------------------- 414 --------------------- */
+@media(max-width:480px){
+    body{
+        overflow-x:visible;
+        overflow-y:visible;
+    }
+    header{
+        width:100%;
+        position:fixed;
+    }
+    header .burger{
+        transform:scale(1);
+        top:24px;
+    }
+    .header_wrap figure{
+        width:35%;
+    }
+    .mobileMenu{
+        top:60px;
+    }
+    .mobileMenu.show{
+        top:60px;
+        width:60%;
+    }
+    /* Section -------------------------------------------- */
+    .sectionWrap .sectionTitle{
+        margin:5%;
+    }
+    .sectionWrap > h1 {
+        margin: 10% 5%;
+    }
+    .sectionWrap h1{
+        margin-bottom:0;
+        margin-left:5%;
+        text-align:left;
+    }
+
+    .container{
+        margin-left:0;
+        padding:5% 2%;
+    }
+    .container figure{
+        padding:0;
+        margin:10% 0;
+        width:100%
+    }
+    .container figure h1 {
+        color: #fff;
+        text-align: center;
+        margin-bottom:10px;
+        font-size:1.2em;
+    }
+    .container figure a{
+        height:initial;
+    }
+    .container figcaption{
+        width:100%;
+        left:0;
+        line-height:30px;
+        position:static;
+        opacity:1;
+    }
+    .container figcaption strong{
+        font-size:1.2em;
+    }
+    .container figcaption p{
+        font-size:1em;
+    }
+    .container figcaption span{
+        font-size:0.9em;
+    }
+    .container figcaption a{
+        font-size:1em;
+    }
+    .content{
+        display:block;
+    }
+    .content div{
+        width:100%;
+        margin:0 0 70px 0;
+        text-align:center;
+
+    }
+    .content div svg {
+        margin-left: 0px;
+    }
+    .content div p{
+        padding:0 15%;
+    }
+    .advantage h1 {
+        margin-left:5%;
+        margin-bottom:70px;
+    }
+    .advantage{
+        margin-left:0;
+    }
+    .advantage.show{
+        margin-left:0;
+    }
+    footer div:nth-of-type(1){
+        display:block;
+        text-align:center;
+    }
+    footer div:nth-of-type(1) p{
+        margin-left:0;
+        margin-bottom:10px;
+    }
+    footer div:nth-of-type(1) figure{
+        margin-left:0;
+        margin-right:0;
+    }
+    .footerMenu ul:nth-of-type(2){
+        display:none;
+    }
+}
+
+/* --------------------- 375 --------------------- */
+@media(max-width:375px){
+    body{
+        overflow-x:visible;
+        overflow-y:visible;
+    }
+    header{
+        width:100%;
+        position:fixed;
+    }
+    header .burger{
+        transform:scale(1);
+        top:24px;
+    }
+    .header_wrap figure{
+        width:35%;
+    }
+    .mobileMenu{
+        top:60px;
+    }
+    .mobileMenu.show{
+        top:60px;
+        width:60%;
+    }
+   
+    footer div:nth-of-type(1){
+        display:block;
+        text-align:center;
+    }
+    footer div:nth-of-type(1) p{
+        margin-left:0;
+        margin-bottom:10px;
+    }
+    footer div:nth-of-type(1) figure{
+        margin-left:0;
+        margin-right:0;
+    }
+    .footerMenu ul:nth-of-type(2){
+        display:none;
+    }
+}
+/* --------------------- 360 --------------------- */
+@media(max-width:360px){
+    body{
+        overflow-x:visible;
+        overflow-y:visible;
+    }
+    header{
+        width:100%;
+        position:fixed;
+    }
+    header .burger{
+        transform:scale(1);
+        top:24px;
+    }
+    .header_wrap figure{
+        width:35%;
+    }
+    .mobileMenu{
+        top:60px;
+    }
+    .mobileMenu.show{
+        top:60px;
+        width:60%;
+    }
+    
+    footer div:nth-of-type(1){
+        display:block;
+        text-align:center;
+    }
+    footer div:nth-of-type(1) p{
+        margin-left:0;
+        margin-bottom:10px;
+    }
+    footer div:nth-of-type(1) figure{
+        margin-left:0;
+        margin-right:0;
+    }
+    .footerMenu ul:nth-of-type(2){
+        display:none;
+    }
+}
+@media(max-width:320px){
+    body{
+        overflow-x:visible;
+        overflow-y:visible;
+    }
+    header{
+        width:100%;
+        position:fixed;
+    }
+    header .burger{
+        transform:scale(1);
+        top:18px;
+    }
+    .header_wrap figure{
+        width:35%;
+    }
+    .mobileMenu{
+        top:50px;
+    }
+    .mobileMenu.show{
+        top:50px;
+        width:60%;
+    }
+    footer div:nth-of-type(1){
+        display:block;
+        text-align:center;
+    }
+    footer div:nth-of-type(1) p{
+        margin-left:0;
+        margin-bottom:10px;
+    }
+    footer div:nth-of-type(1) figure{
+        margin-left:0;
+        margin-right:0;
+    }
+    .footerMenu ul:nth-of-type(2){
+        display:none;
+    }
 }

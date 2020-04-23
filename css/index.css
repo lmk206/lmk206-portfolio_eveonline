@@ -180,7 +180,7 @@ header .header_wrap{
     padding:5%;
 }
 .mobileMenu ul li{
-    padding:5% 5%;
+    padding:5%;
     color:#fff;
 }
 .mobileMenu li > div{
@@ -596,37 +596,6 @@ aside.show{
     opacity:1;
 }
 
- /* IE10+ */
- @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-    aside{
-        position:fixed;
-        right:0%;
-        top:20%;
-        opacity:0;
-        width:7%;
-        height:7%;
-        transition:1.5s;
-    }
-    aside.show{
-        opacity:1;
-        right:3%;
-        width:7%;
-    }
-    .slideImg{
-        display:flex;
-        flex-direction:column;
-        
-    }
-    .slideImg img{
-        width:100%;
-        opacity:.8;
-    }
-    .slideImg img:hover{
-        transform:scale(1.3);
-        transition:.5s;
-        opacity:1;
-    }
-}
 /* ----------------- footer ----------------- */
 footer{
     width:100%;
@@ -687,7 +656,7 @@ footer div:nth-of-type(2) ul li a{
         line-height:50px;
     }
     .visual{
-        height:70vw;
+        height:60vw;
     }
     .visualContent{
         width:90%;
@@ -719,9 +688,12 @@ footer div:nth-of-type(2) ul li a{
     .showCase .tableImg{
         margin-top:20%;
     }
+    .showCase .shipInfo table {
+        height:35vw;
+    }
     aside{
         position:absolute;
-        top:180%;
+        top:270%;
         right:0;
         opacity:1;
     }
@@ -745,7 +717,7 @@ footer div:nth-of-type(2) ul li a{
         overflow-y:visible;
     }
     header, .faction, .faction_wrap, .guide, .showCase{
-        padding:5% 5%;
+        padding:5%;
     }
     header{
         position:fixed;
@@ -764,18 +736,19 @@ footer div:nth-of-type(2) ul li a{
         width:55%;
     }
     .visual{
-        height:55vh;
+        height:55vw;
     }
     .visual .visualContent{
-        width:90%;
+        width:95%;
         display:block;
-        left:10%;
-        top:20%;
+        left:5%;
+        top:30%;
     }
     .visual video{
-        width:55%;
-        height:10%;
-        margin: 0 0 30px 140px;
+        width:0%;
+        height:0%;
+        display:none;
+        opacity:0;
     }
     .visual .visualText{
         width:50%;
@@ -785,9 +758,15 @@ footer div:nth-of-type(2) ul li a{
     }
     .visual .visualText h1{
         margin-bottom:5%;
+        font-size:2.6em;
+        margin-top:5%;
+    }
+    .visual .visualText p{
+        font-size:1.4em;
     }
     .visual .visualText a{
         margin-top:3%;
+        font-size:1em;
     }
     
     .faction_wrap{
@@ -807,11 +786,11 @@ footer div:nth-of-type(2) ul li a{
         width: 100%;
     }
     .playerGuide figcaption{
-        left:15%;
-        top:30%;
+        left:30%;
+        top:40%;
     }
     .playerGuide .pgLeft figcaption{
-        left:25%;
+        left:25%
     }
     .playerGuide .pgRight figcaption{
         left:15%;
@@ -821,14 +800,13 @@ footer div:nth-of-type(2) ul li a{
         font-size:1em;
     }
     .playerGuide figcaption a{
-        text-align:center;
+        display:none;        
+        /* text-align:center;
         font-size:1em;
-    }
-    .playerGuide figcaption a{
         margin-top:80px;
         font-size:0.8rem;
         padding:2% 4%;
-        background-color:#2981bb;
+        background-color:#2981bb; */
     }
     .playerGuide .pgLeft figcaption a{
         margin-left:20px;
@@ -871,8 +849,8 @@ footer div:nth-of-type(2) ul li a{
         margin-top:10%;
     }
 }
-/* --------------------- 414 --------------------- */
-@media(max-width:414px){
+/* --------------------- 480 --------------------- */
+@media(max-width:480px){
     body{
         overflow-x:visible;
         overflow-y:visible;
@@ -901,7 +879,7 @@ footer div:nth-of-type(2) ul li a{
     .visual .visualContent{
         width:100%;
         left:0;
-        top:30%;
+        top:25%;
     }
     .visual .visualText{
         width:100%;
@@ -918,7 +896,7 @@ footer div:nth-of-type(2) ul li a{
         margin-left:10%;
     }
     .visual .visualText span{
-        font-size:5em;
+        font-size:1.2em;
     }
     .visualContent video{
         display:none;
@@ -990,14 +968,15 @@ footer div:nth-of-type(2) ul li a{
     }
     footer div:nth-of-type(1){
         display:block;
-        margin-left:30px;
+        text-align:center;
     }
     footer div:nth-of-type(1) p{
-        margin-left:10%;
+        margin-left:0;
         margin-bottom:10px;
     }
     footer div:nth-of-type(1) figure{
-        margin-left:14%;
+        margin-left:0;
+        margin-right:0;
     }
     .footerMenu ul:nth-of-type(2){
         display:none;
@@ -1018,6 +997,7 @@ footer div:nth-of-type(2) ul li a{
         transform:scale(1);
         top:24px;
     }
+    
     .header_wrap figure{
         width:35%;
     }
@@ -1034,7 +1014,7 @@ footer div:nth-of-type(2) ul li a{
     .visual .visualContent{
         width:100%;
         left:0;
-        top:30%;
+        top:20%;
     }
     .visual .visualText{
         width:100%;
@@ -1051,7 +1031,7 @@ footer div:nth-of-type(2) ul li a{
         margin-left:10%;
     }
     .visual .visualText span{
-        font-size:4.5em;
+        font-size:1.5em;
     }
     .visualContent video{
         display:none;
@@ -1123,14 +1103,15 @@ footer div:nth-of-type(2) ul li a{
     }
     footer div:nth-of-type(1){
         display:block;
-        margin-left:30px;
+        text-align:center;
     }
     footer div:nth-of-type(1) p{
-        margin-left:8%;
+        margin-left:0;
         margin-bottom:10px;
     }
     footer div:nth-of-type(1) figure{
-        margin-left:10%;
+        margin-left:0;
+        margin-right:0;
     }
     .footerMenu ul:nth-of-type(2){
         display:none;
@@ -1166,7 +1147,7 @@ footer div:nth-of-type(2) ul li a{
     .visual .visualContent{
         width:100%;
         left:0;
-        top:30%;
+        top:20%;
     }
     .visual .visualText{
         width:100%;
@@ -1183,7 +1164,7 @@ footer div:nth-of-type(2) ul li a{
         margin-left:10%;
     }
     .visual .visualText span{
-        font-size:4em;
+        font-size:1em;
     }
     .visualContent video{
         display:none;
@@ -1248,14 +1229,15 @@ footer div:nth-of-type(2) ul li a{
     }
     footer div:nth-of-type(1){
         display:block;
-        margin-left:30px;
+        text-align:center;
     }
     footer div:nth-of-type(1) p{
-        margin-left:8%;
+        margin-left:0;
         margin-bottom:10px;
     }
     footer div:nth-of-type(1) figure{
-        margin-left:10%;
+        margin-left:0;
+        margin-right:0;
     }
     .footerMenu ul:nth-of-type(2){
         display:none;
@@ -1272,28 +1254,94 @@ footer div:nth-of-type(2) ul li a{
     }
     header .burger{
         transform:scale(1);
-        top:18px;
+        top:24px;
     }
+    
     .header_wrap figure{
         width:35%;
     }
     .mobileMenu{
-        top:50px;
+        top:60px;
     }
     .mobileMenu.show{
-        top:50px;
+        top:60px;
         width:60%;
+    }
+    .visual{
+        height:120vw;
+    }
+    .visual .visualContent{
+        width:100%;
+        left:0;
+        top:30%;
+    }
+    .visual .visualText{
+        width:100%;
+    }
+    .visualContent .visualText h1{
+        font-size:1.8em;
+    }
+    .visualContent .visualText p{
+        font-size:1.2em;
+    }
+    .visualText a{
+        display:block;
+        width:80%;
+        margin-left:10%;
+    }
+    .visual .visualText span{
+        font-size:1em;
+    }
+    .visualContent video{
+        display:none;
+        opacity:0;
+        width:0;
+        height:0;
+    }
+    .guide{
+        padding:0 5%;
+    }
+    .guide h2{
+        font-size:1.5em;
+    }
+    .playerGuide{
+        display:block;
+    }
+    .playerGuide figcaption{
+       font-size:2em;
+    }
+    .playerGuide .pgLeft figcaption{
+        left:18%;
+    }
+    .playerGuide .pgRight figcaption{
+        left:4%;
+    }
+    .playerGuide figcaption h3{
+        font-size:0.5em;
+    }
+    .playerGuide figcaption a{
+        display:none;
+    }
+    .showCase{
+        padding:5%;
+    }
+    .showCase .sideImg{
+        margin-top:30px;
+    }
+    .showCase .shipInfo figure{
+        margin-top:20px;
     }
     footer div:nth-of-type(1){
         display:block;
-        margin-left:0px;
+        text-align:center;
     }
     footer div:nth-of-type(1) p{
-        margin-left:12%;
+        margin-left:0;
         margin-bottom:10px;
     }
     footer div:nth-of-type(1) figure{
-        margin-left:15%;
+        margin-left:0;
+        margin-right:0;
     }
     .footerMenu ul:nth-of-type(2){
         display:none;

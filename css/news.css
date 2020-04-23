@@ -407,7 +407,7 @@ footer div:nth-of-type(2) ul li a{
     
 }
 /* --------------------- 414 --------------------- */
-@media(max-width:414px){
+@media(max-width:480px){
     body{
         overflow-x:visible;
         overflow-y:visible;
@@ -497,14 +497,15 @@ footer div:nth-of-type(2) ul li a{
     }
     footer div:nth-of-type(1){
         display:block;
-        margin-left:30px;
+        text-align:center;
     }
     footer div:nth-of-type(1) p{
-        margin-left:10%;
+        margin-left:0;
         margin-bottom:10px;
     }
     footer div:nth-of-type(1) figure{
-        margin-left:14%;
+        margin-left:0;
+        margin-right:0;
     }
     .footerMenu ul:nth-of-type(2){
         display:none;
@@ -540,14 +541,15 @@ footer div:nth-of-type(2) ul li a{
     }
     footer div:nth-of-type(1){
         display:block;
-        margin-left:30px;
+        text-align:center;
     }
     footer div:nth-of-type(1) p{
-        margin-left:8%;
+        margin-left:0;
         margin-bottom:10px;
     }
     footer div:nth-of-type(1) figure{
-        margin-left:10%;
+        margin-left:0;
+        margin-right:0;
     }
     .footerMenu ul:nth-of-type(2){
         display:none;
@@ -580,14 +582,15 @@ footer div:nth-of-type(2) ul li a{
     
     footer div:nth-of-type(1){
         display:block;
-        margin-left:30px;
+        text-align:center;
     }
     footer div:nth-of-type(1) p{
-        margin-left:8%;
+        margin-left:0;
         margin-bottom:10px;
     }
     footer div:nth-of-type(1) figure{
-        margin-left:10%;
+        margin-left:0;
+        margin-right:0;
     }
     .footerMenu ul:nth-of-type(2){
         display:none;
@@ -618,14 +621,15 @@ footer div:nth-of-type(2) ul li a{
     }
     footer div:nth-of-type(1){
         display:block;
-        margin-left:0px;
+        text-align:center;
     }
     footer div:nth-of-type(1) p{
-        margin-left:12%;
+        margin-left:0;
         margin-bottom:10px;
     }
     footer div:nth-of-type(1) figure{
-        margin-left:15%;
+        margin-left:0;
+        margin-right:0;
     }
     .footerMenu ul:nth-of-type(2){
         display:none;

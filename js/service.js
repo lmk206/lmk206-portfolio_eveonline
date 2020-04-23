@@ -32,7 +32,7 @@ window.addEventListener('DOMContentLoaded',function(){
     function navControl(){
         $('nav ul li').on('mouseover',function(){
             // $(this).find('div').addClass('show');
-            $('.navBg div').slideDown()
+            $('.navBg div').stop().slideDown()
         })
         $('nav ul li').on('mouseleave',function(){
             // $(this).find('div').removeClass('show');
