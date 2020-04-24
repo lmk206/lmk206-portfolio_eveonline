@@ -199,7 +199,7 @@ header .header_wrap{
 /* --------------------- section ------------------------- */
 section{
     background:url('../img/bg_background7.jpg')no-repeat;
-    background-size:cover;
+    background-size:100% 100vh;
     background-attachment:fixed;
 }
 .sectionWrap{
@@ -476,7 +476,8 @@ footer div:nth-of-type(2) ul li a{
     }
     .box .tab-con table tr td{
         white-space: pre-line;
-        padding:5%;
+        padding:1%;
+        font-size:0.7em;
     }
     .box .tab-con table th{
         padding:5%;
@@ -541,6 +542,7 @@ footer div:nth-of-type(2) ul li a{
     }
     .box .tab-con table tr td{
         padding:1%;
+        font-size:0.8em;
     }
     footer div:nth-of-type(1){
         display:block;
@@ -582,7 +584,13 @@ footer div:nth-of-type(2) ul li a{
         top:60px;
         width:60%;
     }
-    
+    .downButton a {
+        width: 100%;
+        padding: 15px;
+        margin: 0 auto;
+        margin-top: 5%;
+        text-align: center;
+    }
     footer div:nth-of-type(1){
         display:block;
         text-align:center;

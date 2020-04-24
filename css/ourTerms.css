@@ -202,7 +202,7 @@ header .header_wrap{
 /* --------------------- section ------------------------- */
 section{
     background:url('../img/aboutUs/bg_background7.jpg')no-repeat;
-    background-size:cover;
+    background-size:100% 100vh;
     background-attachment:fixed;
 }
 .sectionWrap{
