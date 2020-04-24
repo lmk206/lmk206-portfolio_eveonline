@@ -200,7 +200,7 @@ header .header_wrap{
 section{
     background:url('../img/bg_background7.jpg')no-repeat;
     background-size:cover;
-    background-attachment:scroll;
+    background-attachment:fixed;
 }
 
 .sectionWrap{

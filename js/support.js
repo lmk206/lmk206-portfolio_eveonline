@@ -12,8 +12,8 @@ window.addEventListener('DOMContentLoaded',function(){
             navControl();
         }
     // 사이즈에 상관없이 작동하는 함수
-        div();
-        li();
+        divControl();
+        liControl();
     }
     // Header ------------------------------------------------------------------------------
     
@@ -32,19 +32,16 @@ window.addEventListener('DOMContentLoaded',function(){
     
     // 네비게이션 제어 ----------------------------------------------------------------------
     function navControl(){
-        $('nav ul li').on('mouseover',function(){
-            // $(this).find('div').addClass('show');
+        $('nav ul').on('mouseover',function(){
             $('.navBg div').stop().slideDown()
         })
-        $('nav ul li').on('mouseleave',function(){
-            // $(this).find('div').removeClass('show');
+        $('nav ul').on('mouseleave',function(){
             $('.navBg div').stop().slideUp()
         });
     }   
     // 모바일 네비 제어 ----------------------------------------------------------------------
     function mobileSlide(){
         $('.mobileMenu ul li').on('click',function(){
-            // alert("아이폰");
             $(this).find('div').slideToggle();
         })
     }
@@ -52,7 +49,7 @@ window.addEventListener('DOMContentLoaded',function(){
 
     //box content ----------------------------------------------------------------------
 
-    function div(){
+    function divControl(){
     $('article div').on('mouseenter',function(){
         this.classList.add('active');
     })
@@ -74,7 +71,7 @@ window.addEventListener('DOMContentLoaded',function(){
     })
     }
 
-    function li(){
+    function liControl(){
     $('article div li').on('mouseenter',function(){
         $(this).addClass('active');
     })

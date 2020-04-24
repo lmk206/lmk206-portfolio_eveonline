@@ -30,11 +30,11 @@ window.addEventListener('DOMContentLoaded',function(){
     
     // 네비게이션 제어 ----------------------------------------------------------------------
     function navControl(){
-        $('nav ul li').on('mouseover',function(){
+        $('nav ul').on('mouseover',function(){
             // $(this).find('div').addClass('show');
             $('.navBg div').stop().slideDown()
         })
-        $('nav ul li').on('mouseleave',function(){
+        $('nav ul').on('mouseleave',function(){
             // $(this).find('div').removeClass('show');
             $('.navBg div').stop().slideUp()
         });

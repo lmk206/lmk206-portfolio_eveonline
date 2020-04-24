@@ -1,0 +1,537 @@
+@import url('common.css');
+/* body{
+    overflow-x:hidden;
+    overflow-y:hidden;
+} */
+#total{
+    width:100%;
+}
+/* -------------------------------- header ------------------------------------ */
+header{
+    position:fixed;
+    width:100%;
+    background-color:#000;
+    z-index:25;
+    padding:0% 15%
+}
+header.active{
+    opacity:0.5
+}
+header .header_wrap{
+    width:100%;
+    height:100%;
+    display:flex;
+    position:relative;
+}
+.header_wrap figure{
+    width:15%;
+}
+.header_wrap figure img{
+    width:100%;
+}
+
+/* --------------------------------- nav -------------------------------------- */
+.header_wrap .navBg{
+    width:100%;
+    background-color:#000;
+    display:flex;
+}
+.header_wrap nav{
+    width:100%;
+    padding:1.7%;
+}
+.header_wrap nav ul{
+    display:flex;
+    justify-content:center;
+    margin-top:10px;
+}
+.header_wrap nav ul li{
+    margin-right:5%;
+    width:9%;
+    position:relative;
+}
+.header_wrap nav ul li a{
+    color:#fff;
+    font-size:1em;
+}
+
+.header_wrap nav ul li:nth-of-type(2) div a{
+   margin-left:10px;
+}
+.header_wrap nav ul div{
+    position:relative;
+    margin-top:40px;
+    line-height:80px;
+    background-color:#000;
+    display:none;
+}
+.header_wrap nav ul div a{
+    display:block;
+    font-size:1em;
+}
+.burger{
+    position:relative;
+    right:0;
+    top:30%;
+    display:none;
+    z-index:10;
+    transition:all .5s;
+}
+.burger span{
+    width:30px;
+    height:2px;
+    background-color:#fff;
+    display:block;
+    position:absolute;
+    transition:all .5s;
+}
+.burger span:nth-of-type(1){
+    top:0
+}
+.burger span:nth-of-type(2){
+    top:6px
+}
+.burger span:nth-of-type(3){
+    top:12px
+}
+/* 버거메뉴 애니메이션입니다-------------------------------------------- */
+@keyframes menu-bar07-01 {
+    0% {
+        transform : translateY(6px) rotate(45deg);
+    }
+    50% {
+        transform : translateY(6px) rotate(0);
+    }
+    100% {
+        transform : translateY(0) rotate(0);
+    }
+}
+.burger span:nth-of-type(2) {
+    transition : all .25s .25s;
+    opacity : 1;
+}
+.burger span:nth-of-type(3) {
+    animation : menu-bar07-02 .75s forwards;
+}
+
+@keyframes menu-bar07-02 {
+    0% {
+        transform : translateY(-6px) rotate(-45deg);
+    }
+    50% {
+        transform : translateY(-6px) rotate(0);
+    }
+    100% {
+        transform : translateY(0) rotate(0);
+    }
+}
+
+.burger.active span:nth-of-type(1) {
+    animation : active-menu-bar07-01 .75s forwards;
+}
+
+@keyframes active-menu-bar07-01 {
+    0% {
+        transform : translateY(0) rotate(0);
+    }
+    50% {
+        transform : translateY(6px) rotate(0);
+    }
+    100% {
+        transform : translateY(6px) rotate(45deg);
+    }
+}
+.burger.active span:nth-of-type(2) {
+    opacity : 0;
+}
+.burger.active span:nth-of-type(3) {
+    -webkit-animation : active-menu-bar07-02 .75s forwards;
+    animation : active-menu-bar07-02 .75s forwards;
+}
+
+@keyframes active-menu-bar07-02 {
+    0% {
+        transform : translateY(0) rotate(0);
+    }
+    50% {
+        transform : translateY(-6px) rotate(0);
+    }
+    100% {
+        transform : translateY(-6px) rotate(-45deg);
+    }
+}
+/* --------------- 모바일 메뉴입니다 -------- */
+.mobileMenu{
+    position:fixed;
+    right:-60%;
+    top:50px;
+    transition:.5s;
+    /* display:none; */
+    opacity:0;
+}
+.mobileMenu.show{
+    /* display:block; */
+    opacity:1;
+    z-index:5;
+    right:-10%;
+    top:50px;
+    width:50%;
+    transition:.5s;
+}
+.mobileMenu ul{
+    background-color:#000;
+    height:100vh;
+    /* margin-top:10px; */
+    padding:5%;
+}
+.mobileMenu ul li{
+    padding:5% 5%;
+    color:#fff;
+}
+.mobileMenu li > div{
+    display:none;
+    height:100%;
+    line-height:55px;
+    margin-top:7%;
+    margin-left:20px;
+}
+.mobileMenu a{
+    color:#fff;
+    display:block;
+}
+/* --------------------- section ------------------------- */
+section{
+    background:url('../img/aboutUs/bg_background7.jpg')no-repeat;
+    background-size:cover;
+    background-attachment:fixed;
+}
+.sectionWrap{
+    width:100%;
+    padding: 10% 15%;
+}
+.sectionWrap h1{
+    color:#ffa500;
+    font-size : 3em;
+    margin-bottom: 5%;
+}
+.sectionWrap .termText p{
+    color:#fff;
+    white-space:pre-line;
+    margin:5% 0;
+    font-size:1.5em;
+}
+.sectionWrap .termText ol li{
+    color:#fff;
+    margin:2%;
+    list-style-type:decimal;
+    font-size:1.2em;
+}
+
+/* --------------------------------- footer -------------------------------- */
+footer{
+    width:100%;
+    padding:5% 15%;
+    background-color:#0a0d13;
+}
+footer .sns{
+    z-index:10;
+}
+
+footer div:nth-of-type(1){
+    display:flex;
+    justify-content:space-between;
+}
+
+footer div:nth-of-type(1) p{
+    color:#83868a;
+    font-weight:600;
+    margin-left:11.5%;
+}
+
+footer div:nth-of-type(2){
+    display:flex;
+    justify-content:space-around
+}
+
+footer div:nth-of-type(2) ul li:nth-of-type(1){
+    color:#83868a;
+}
+footer div:nth-of-type(2) ul li{
+    color:#eee;
+    line-height:250%;
+}
+footer div:nth-of-type(2) ul li a{
+    color:#eee;
+}
+.copyRight{
+    color:#ccc;
+    text-align:center;
+    margin-top:35px;
+}
+
+/* ---------------------- media -------------------------------------- */
+/* -------------------- 1024px ------------------- */
+@media(max-width:1024px){
+    body{
+        overflow-x:visible;
+        overflow-y:visible;
+    }
+    /* Header -------------------------------------------- */
+    .header_wrap figure{
+        width:30%;
+    }
+    .header_wrap nav ul li{
+        width:100%;
+    }
+    .header_wrap nav ul{
+        margin-top:25px;
+    }
+    .header_wrap nav ul li > a{
+        font-size:0.9em;
+    }
+    .header_wrap nav ul li div a{
+        font-size:0.3em;
+        margin-top:20px;
+        line-height:50px;
+    }
+    /* Section -------------------------------------------- */
+    .sectionWrap h1 {
+        color:#ffa500;
+        margin-top:5%;
+        font-size: 3em;
+    }
+    .sectionWrap .termText p {
+        font-size: 1em;
+    }
+    .sectionWrap .termText ol li{
+        font-size: 1em;
+    }
+    /* Footer --------------------------------------------- */
+    .sns{
+        margin-right:10%;
+    }
+    footer div:nth-of-type(1) p{
+        margin-left:8.5%
+    }
+    footer div:nth-of-type(2){
+        margin-top:1%;
+    }
+    footer div:nth-of-type(2) ul li a{
+        font-size:0.8em
+    }
+}
+/* --------------------- 768 --------------------- */
+@media(max-width:768px){
+    body{
+        overflow-x:visible;
+        overflow-y:visible;
+    }
+    header{
+        position:fixed;
+        padding:0 5%;
+    }
+    header nav{
+        display:none;
+    }
+    header .burger{
+        float:right;
+        display:block;
+        right:30px;
+        top:35px;
+    }
+    .mobileMenu.show{
+        width:55%;
+    }
+    /* Section -------------------------------------------- */
+    .sectionWrap h1 {
+        color:#ffa500;
+        margin-top:5%;
+        font-size: 2em;
+    }
+    .sectionWrap .termText p {
+        font-size: 1em;
+    }
+    .sectionWrap .termText ol li{
+        font-size: 1em;
+    }
+}
+/* --------------------- 480 --------------------- */
+@media(max-width:480px){
+    body{
+        overflow-x:visible;
+        overflow-y:visible;
+    }
+    header{
+        width:100%;
+        position:fixed;
+    }
+    header .burger{
+        transform:scale(1);
+        top:30px;
+    }
+    .header_wrap figure{
+        width:35%;
+    }
+    .mobileMenu{
+        top:60px;
+    }
+    .mobileMenu.show{
+        top:60px;
+        width:60%;
+    }
+    /* Section -------------------------------------------- */
+    .sectionWrap{
+        padding-top:20%;
+    }
+    .sectionWrap h1 {
+        color:#ffa500;
+        margin-top:5%;
+        font-size: 1.5em;
+    }
+    .sectionWrap .termText p {
+        font-size: 1em;
+    }
+    .sectionWrap .termText ol li{
+        font-size: 1em;
+        margin:5% 0;
+    }
+    /* Footer --------------------------------------------- */
+    footer div:nth-of-type(1){
+        display:block;
+        text-align:center;
+    }
+    footer div:nth-of-type(1) p{
+        margin-left:0;
+        margin-bottom:10px;
+    }
+    footer div:nth-of-type(1) figure{
+        margin-left:0;
+        margin-right:0;
+    }
+    .footerMenu ul:nth-of-type(2){
+        display:none;
+    }
+}
+
+/* --------------------- 375 --------------------- */
+@media(max-width:375px){
+    body{
+        overflow-x:visible;
+        overflow-y:visible;
+    }
+    header{
+        width:100%;
+        position:fixed;
+    }
+    header .burger{
+        transform:scale(1);
+        top:24px;
+    }
+    .header_wrap figure{
+        width:35%;
+    }
+    .mobileMenu{
+        top:60px;
+    }
+    .mobileMenu.show{
+        top:60px;
+        width:60%;
+    }
+    /* Section ---------------------------------------------------------- */
+    /* Footer ----------------------------------------------------------- */
+    footer div:nth-of-type(1){
+        display:block;
+        text-align:center;
+    }
+    footer div:nth-of-type(1) p{
+        margin-left:0;
+        margin-bottom:10px;
+    }
+    footer div:nth-of-type(1) figure{
+        margin-left:0;
+        margin-right:0;
+    }
+    .footerMenu ul:nth-of-type(2){
+        display:none;
+    }
+}
+/* --------------------- 360 --------------------- */
+@media(max-width:360px){
+    body{
+        overflow-x:visible;
+        overflow-y:visible;
+    }
+    header{
+        width:100%;
+        position:fixed;
+    }
+    header .burger{
+        transform:scale(1);
+        top:24px;
+    }
+    .header_wrap figure{
+        width:35%;
+    }
+    .mobileMenu{
+        top:60px;
+    }
+    .mobileMenu.show{
+        top:60px;
+        width:60%;
+    }
+    
+    footer div:nth-of-type(1){
+        display:block;
+        text-align:center;
+    }
+    footer div:nth-of-type(1) p{
+        margin-left:0;
+        margin-bottom:10px;
+    }
+    footer div:nth-of-type(1) figure{
+        margin-left:0;
+        margin-right:0;
+    }
+    .footerMenu ul:nth-of-type(2){
+        display:none;
+    }
+}
+@media(max-width:320px){
+    body{
+        overflow-x:visible;
+        overflow-y:visible;
+    }
+    header{
+        width:100%;
+        position:fixed;
+    }
+    header .burger{
+        transform:scale(1);
+        top:18px;
+    }
+    .header_wrap figure{
+        width:35%;
+    }
+    .mobileMenu{
+        top:50px;
+    }
+    .mobileMenu.show{
+        top:50px;
+        width:60%;
+    }
+    footer div:nth-of-type(1){
+        display:block;
+        text-align:center;
+    }
+    footer div:nth-of-type(1) p{
+        margin-left:0;
+        margin-bottom:10px;
+    }
+    footer div:nth-of-type(1) figure{
+        margin-left:0;
+        margin-right:0;
+    }
+    .footerMenu ul:nth-of-type(2){
+        display:none;
+    }
+}

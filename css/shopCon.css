@@ -204,17 +204,19 @@ section{
 }
 
 .sectionWrap{
-    padding:10% 15% 5% 15%;
+    padding:10% 5% 5% 5%;
     position:relative;
 }
-.sectionWrap h1{
+.sectionWrap > h1{
     color:#ffa500;
     font-size:2em;
     margin-bottom:3%;
+    margin-left:120px;
 }
 .sectionTitle{
     display:flex;
     margin-bottom:5%;
+    margin-left:120px;
 }
 .sectionTitle a{
     color:#fff;
@@ -222,7 +224,7 @@ section{
 .tabCon{
     display:flex;
     margin-bottom:1%;
-    margin-left:130px;
+    margin-left:120px;
 }
 .tabCon li{
     padding:1% 2%;
@@ -238,7 +240,7 @@ section{
     width:100%;
     display:flex;
     flex-wrap:wrap;
-    margin-left:100px;
+    padding-left:100px;
 }
 .container figure{
     width:30%;
@@ -327,13 +329,12 @@ section{
 .content{
     display:flex;
     justify-content:space-around;
+    margin-top:5%;
 }
 .content div{
     margin:1%;
     width:30%;
-}
-.content div svg{
-    margin-left:135px;
+    text-align:center;
 }
 .content div p{
     color:#fff;
@@ -466,9 +467,6 @@ footer div:nth-of-type(2) ul li a{
     .advantage.show{
         margin-left:5%;
     }
-    .content div svg {
-        margin-left:70px;
-    }
     .content div p{
         font-size:1em;
     }
@@ -522,14 +520,16 @@ footer div:nth-of-type(2) ul li a{
     .advantage.show{
         margin-left:5%;
     }
-    .content div svg {
-        margin-left:40px;
-    }
     .content div p{
         font-size:1em;
     }
+    .advantage h1 {
+        margin-left: 0px;
+        margin-bottom: 70px;
+        text-align: center;
+    }
 }
-/* --------------------- 414 --------------------- */
+/* --------------------- 480 --------------------- */
 @media(max-width:480px){
     body{
         overflow-x:visible;
@@ -612,9 +612,6 @@ footer div:nth-of-type(2) ul li a{
         text-align:center;
 
     }
-    .content div svg {
-        margin-left: 0px;
-    }
     .content div p{
         padding:0 15%;
     }
@@ -627,6 +624,11 @@ footer div:nth-of-type(2) ul li a{
     }
     .advantage.show{
         margin-left:0;
+    }
+    .advantage h1 {
+        margin-left: 0px;
+        margin-bottom: 70px;
+        text-align: center;
     }
     footer div:nth-of-type(1){
         display:block;

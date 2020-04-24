@@ -29,11 +29,11 @@ window.addEventListener('DOMContentLoaded',function(){
     
     // 네비게이션 제어 ----------------------------------------------------------------------
     function navControl(){
-        $('nav ul li').on('mouseover',function(){
+        $('nav ul').on('mouseover',function(){
             // $(this).find('div').addClass('show');
             $('.navBg div').stop().slideDown()
         })
-        $('nav ul li').on('mouseleave',function(){
+        $('nav ul').on('mouseleave',function(){
             // $(this).find('div').removeClass('show');
             $('.navBg div').stop().slideUp()
         });
@@ -50,25 +50,37 @@ window.addEventListener('DOMContentLoaded',function(){
         e.preventDefault();
         var $this = $(this);
         localStorage.page = $this.index();
+        localStorage.name = $this.text();
         setTimeout(function(){
             location.href = $this.attr("href");
         },100);
     })
-
+    $(".mobileMenu li div a").on('click',function(){
+        var $this = $(this);
+        localStorage.name = $this.text();
+    })
     //저장소 값 가져오기 ------------------------------------------------
     $.ajax({
         url : '../xml/shopcon.xml',
         type : 'GET', //POST
         dataType : 'xml',
         success:function(shopCon){
- 
-            var item;           
+            var num;
+            var item;
+            var tab = document.querySelectorAll(".tabCon li a");
+
+            switch(localStorage.name){
+                case "Gametime" : num = 0; break;
+                case "Package" : num = 1; break;
+            }
+                       
             $(shopCon).find('item').each(function(){
                 item = $(shopCon).find('item').eq(localStorage.page).html();
+                item2 = $(shopCon).find('item').eq(num).html();
                 $('.sectionWrap').html(item);
+                $('.sectionWrap').html(item2);
             });
 
-            var tab = document.querySelectorAll(".tabCon li a");
             for(let t = 0; t<tab.length; t++){
                 tab[t].addEventListener('click',function(){
                     console.log(tab[t]);
