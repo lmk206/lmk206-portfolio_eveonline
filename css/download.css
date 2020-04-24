@@ -522,7 +522,23 @@ footer div:nth-of-type(2) ul li a{
         top:60px;
         width:60%;
     }
-   
+    .box {
+        padding: 0;
+        text-align: center;
+        width: 100%;
+        height:initial;
+    }
+    .downButton a {
+        width: 100%;
+        padding: 20px;
+        margin: 0 auto;
+        margin-top: 5%;
+        text-align: center;
+    }
+    .box .tab-con table th {
+        padding: 5%;
+        font-size:0.8em;
+    }
     footer div:nth-of-type(1){
         display:block;
         text-align:center;
@@ -602,6 +618,13 @@ footer div:nth-of-type(2) ul li a{
     .mobileMenu.show{
         top:50px;
         width:60%;
+    }
+    .downButton a {
+        width: 100%;
+        padding: 10px;
+        margin: 0 auto;
+        margin-top: 5%;
+        text-align: center;
     }
     footer div:nth-of-type(1){
         display:block;
