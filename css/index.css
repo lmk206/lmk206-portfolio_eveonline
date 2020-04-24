@@ -1,8 +1,8 @@
 @import url('common.css');
-body{
+/* body{
     overflow-x:hidden;
     overflow-y:hidden;
-}
+} */
 #total{
     width:100%;
 }
@@ -287,7 +287,7 @@ header .header_wrap{
 
 .container{
     background:url('../img/bg_background7.jpg')no-repeat;
-    background-size:100% 100vh;
+    background-size:cover;
     background-attachment: fixed;
 }
 /* --------------------- faction -------------------------------- */
@@ -493,10 +493,13 @@ header .header_wrap{
     padding:10% 20% 10% 20%;
     opacity:0;
     transition:.6s;
+    position:relative;
+    overflow:hidden;
 }
 .showCase.show{
     padding:10% 15% 10% 15%;
     opacity:1;
+    overflow:hidden;
 }
 .showCase h2{
     color:#fff;
@@ -506,7 +509,9 @@ header .header_wrap{
 .showCase .shipInfo{
     position:relative;
     margin-top:10%;
-    /* overflow:hidden; */
+    
+    height:50vh;
+    width: 100%;
 }
 .showCase.wSlide{
     position:relative;
@@ -515,7 +520,13 @@ header .header_wrap{
 }
 .showCase .shipInfo .shipDetail{
     width:100%;
+    position:absolute;
+    left:0;
 }
+
+/* .showCase .shipInfo .shipDetail:nth-of-type(1) {
+    right: 100%
+} */
 .showCase .shipInfo table{
     position:relative;
     width:50%;
@@ -565,6 +576,19 @@ header .header_wrap{
 .shipInfo.active .tableImg{
     opacity:0;
 }
+.showCase .button{
+    width:100%;
+    left:0;
+    position:absolute;
+    top:0%;
+    display:flex;
+    justify-content:space-between;
+}
+.showCase .button img{
+    width:100px;
+    height:100px;
+    z-index:50;
+}
 
 /* ------------------------------ aside -------------------------------------- */
 aside{
@@ -574,11 +598,13 @@ aside{
     opacity:0;
     width:7%;
     transition:1.5s;
+    display:none;
 }
 aside.show{
     opacity:1;
     right:3%;
     width:7%;
+    display:none;
 }
 .slideImg{
     /* display:flex;

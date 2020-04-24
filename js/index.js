@@ -10,7 +10,7 @@ $(function(){
             $('.visual figure img').not(":first").hide();
             $("#main")[0].pause();
         }else{
-            action();
+            // action();
             facAction();
             guideAction();
             navControl();
@@ -305,21 +305,23 @@ function mobileSlide(){
             //success start
             var name,mass,cargo,mText,cText,estValue,velocity,estText,vText,hitPoint,spec,wText,iText,sImg;
             var idx = 0;
+            var imgControl = document.querySelectorAll('.showCase .button img');
+            var conL2 = $(".shipInfo");
+            var divL2 = document.querySelectorAll('.shipDetail');
+            
             if(window.innerWidth >= 1024){
             showCase(0);
-            }else{
-                showCase2();
-                var divL = $(".shipInfo").find('div');
+            var divL = $(".shipInfo").find('div');
                 for(var i = 0 ; i < divL.length; i++){
-                    console.log(divL)
                     divL.eq(i).css({ 
                         left: i* 100+"%"   
                     })
                 }
+            }else{
+                showCase2();
             }
             $('.slideShow .slideImg img').on("click",function(){
                 idx = $(this).index();
-                console.log($(index.portfolio)[idx]);
                 $('.shipInfo').addClass('active');
                
                 
@@ -334,56 +336,137 @@ function mobileSlide(){
             
             function showCase(){
 
-                var $this = index.portfolio[idx];
-                name = $this.Name;
-                mass = $this.Mass;
-                cargo = $this.Cargo;    
-                mText = $this.mText;    
-                cText = $this.cText;    
-                estValue = $this.ESTvalue;    
-                velocity = $this.velocity;    
-                estText = $this.ESTText;    
-                vText = $this.vText;    
-                hitPoint = $this.HitPoint;    
-                spec = $this.spec;    
-                wText = $this.wText;    
-                iText = $this.iText;    
-                sImg = $this.sImg; 
+                // var $this = index.portfolio[idx];
+                // name = $this.Name;
+                // mass = $this.Mass;
+                // cargo = $this.Cargo;    
+                // mText = $this.mText;    
+                // cText = $this.cText;    
+                // estValue = $this.ESTvalue;    
+                // velocity = $this.velocity;    
+                // estText = $this.ESTText;    
+                // vText = $this.vText;    
+                // hitPoint = $this.HitPoint;    
+                // spec = $this.spec;    
+                // wText = $this.wText;    
+                // iText = $this.iText;    
+                // sImg = $this.sImg; 
 
 
-                showTable = "<div class='shipDetail'><table class='shipTable'>";
-                showTable += "<tbody>";
-                showTable += "<th colspan='2'>"+name+"</th>"
-                showTable += "<tr>";
-                showTable += "<td>"+mass+"</td>";
-                showTable += "<td>"+cargo+"</td>";
-                showTable += "</tr>";
-                showTable += "<tr>";
-                showTable += "<td>"+mText+"</td>";
-                showTable += "<td>"+cText+"</td>";
-                showTable += "</tr>";
-                showTable += "<tr>";
-                showTable += "<td>"+estValue+"</td>";
-                showTable += "<td>"+velocity+"</td>";
-                showTable += "</tr>";
-                showTable += "<tr>";
-                showTable += "<td>"+estText+"</td>";
-                showTable += "<td>"+vText+"</td>";
-                showTable += "</tr>";
-                showTable += "<tr>";
-                showTable += "<td>"+hitPoint+"</td>";
-                showTable += "<td>"+spec+"</td>";
-                showTable += "</tr>";
-                showTable += "<tr>";
-                showTable += "<td>"+wText+"</td>";
-                showTable += "<td>"+iText+"</td>";
-                showTable += "</tr>";
-                showTable += "</tody>";
-                showTable += "</table>";
-                showTable += "<figure><img class='tableImg' src="+sImg+"></figure></div>";
-                $('.shipInfo').html(showTable)
+                // showTable = "<div class='shipDetail'><table class='shipTable'>";
+                // showTable += "<tbody>";
+                // showTable += "<th colspan='2'>"+name+"</th>"
+                // showTable += "<tr>";
+                // showTable += "<td>"+mass+"</td>";
+                // showTable += "<td>"+cargo+"</td>";
+                // showTable += "</tr>";
+                // showTable += "<tr>";
+                // showTable += "<td>"+mText+"</td>";
+                // showTable += "<td>"+cText+"</td>";
+                // showTable += "</tr>";
+                // showTable += "<tr>";
+                // showTable += "<td>"+estValue+"</td>";
+                // showTable += "<td>"+velocity+"</td>";
+                // showTable += "</tr>";
+                // showTable += "<tr>";
+                // showTable += "<td>"+estText+"</td>";
+                // showTable += "<td>"+vText+"</td>";
+                // showTable += "</tr>";
+                // showTable += "<tr>";
+                // showTable += "<td>"+hitPoint+"</td>";
+                // showTable += "<td>"+spec+"</td>";
+                // showTable += "</tr>";
+                // showTable += "<tr>";
+                // showTable += "<td>"+wText+"</td>";
+                // showTable += "<td>"+iText+"</td>";
+                // showTable += "</tr>";
+                // showTable += "</tody>";
+                // showTable += "</table>";
+                // showTable += "<figure><img class='tableImg' src="+sImg+"></figure></div>";
+                // $('.shipInfo').html(showTable)
+
+                $.each(index.portfolio,function(){
+                    
+                    name = this.Name;
+                    mass = this.Mass;
+                    cargo = this.Cargo;    
+                    mText = this.mText;    
+                    cText = this.cText;    
+                    estValue = this.ESTvalue;    
+                    velocity = this.velocity;    
+                    estText = this.ESTText;    
+                    vText = this.vText;    
+                    hitPoint = this.HitPoint;    
+                    spec = this.spec;    
+                    wText = this.wText;    
+                    iText = this.iText;    
+                    sImg = this.sImg;
+                    jj(); 
+                })            
+                
+                function jj(){
+                    showTable = "<div class='shipDetail'><table class='shipTable'>";
+                    showTable += "<tbody>";
+                    showTable += "<th colspan='2'>"+name+"</th>"
+                    showTable += "<tr>";
+                    showTable += "<td>"+mass+"</td>";
+                    showTable += "<td>"+cargo+"</td>";
+                    showTable += "</tr>";
+                    showTable += "<tr>";
+                    showTable += "<td>"+mText+"</td>";
+                    showTable += "<td>"+cText+"</td>";
+                    showTable += "</tr>";
+                    showTable += "<tr>";
+                    showTable += "<td>"+estValue+"</td>";
+                    showTable += "<td>"+velocity+"</td>";
+                    showTable += "</tr>";
+                    showTable += "<tr>";
+                    showTable += "<td>"+estText+"</td>";
+                    showTable += "<td>"+vText+"</td>";
+                    showTable += "</tr>";
+                    showTable += "<tr>";
+                    showTable += "<td>"+hitPoint+"</td>";
+                    showTable += "<td>"+spec+"</td>";
+                    showTable += "</tr>";
+                    showTable += "<tr>";
+                    showTable += "<td>"+wText+"</td>";
+                    showTable += "<td>"+iText+"</td>";
+                    showTable += "</tr>";
+                    showTable += "</tody>";
+                    showTable += "</table>";
+                    showTable += "<figure><img class='tableImg' src="+sImg+"></figure></div>";
+                    $('.shipInfo').append(showTable)
+                }
             }
-
+            var conIndex = 0;
+            console.log($('.shipDetail')[7])
+            imgControl[0].addEventListener('click',function(){
+                conL2 = $(".shipInfo");
+                
+                if(conIndex == 0) {
+                    // $('.shipDetail')[7].prependTo(conL2)
+                } else {
+                    conIndex--;
+                }
+                
+                conL2.css({ 
+                    left: -conIndex * 100+"%"
+                })
+            })
+            imgControl[1].addEventListener('click',function(){
+                conL2 = $(".shipInfo");
+                
+                
+                if(conIndex == 7) {
+                    // $('.shipDetail')[0].appendTo(conL2);
+                } else {
+                    conIndex++;
+                }
+                
+                conL2.css({ 
+                    left: -conIndex * 100+"%"   
+                })
+            })
 // mobile showcase ----------------------------------------------------------------------
             function showCase2(){
                 $.each(index.portfolio,function(){
@@ -442,7 +525,7 @@ function mobileSlide(){
         // success end
         }
     });
-
+    
 // footer -------------------------------------------------------------------------------
 // footer sns icon change ---------------------------------------------------------------
             
