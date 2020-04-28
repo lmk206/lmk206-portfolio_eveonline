@@ -1,10 +1,11 @@
 @import url('common.css');
-/* body{
+body{
     overflow-x:hidden;
     overflow-y:hidden;
-} */
+}
 #total{
     width:100%;
+    position:relative;
 }
 
 /* -------------------------------- header ------------------------------------ */
@@ -286,9 +287,108 @@ header .header_wrap{
 /* -------------------------- container ----------------------- */
 
 .container{
-    background:url('../img/bg_background7.jpg')no-repeat;
+    background:url('../img/index/bg_background7.jpg')no-repeat;
     background-size:cover;
     background-attachment: fixed;
+}
+/* Introduce-------------------------------------------------------- */
+.intro{
+    padding:10% 15%;
+}
+.intro h1, .intro p{
+    color:#fff;
+}
+.intro h1{
+    font-size:3em;
+}
+.intro p{
+    font-size:1.5em;
+    line-height:50px;
+    margin-bottom:2%;
+}
+.introText{
+    display:flex;
+}
+.text{
+    width:60%;
+    margin-top:10%;
+}
+.imgWrap{
+    width:40%;
+    height:100%;
+    display:flex;
+    flex-wrap:wrap;
+    margin-left:5%;
+}
+.imgWrap figure{
+    text-align:center;
+    width:200px;
+    height:300px;
+    padding:5%;
+    margin:5%;
+    background-color:rgba(50,66,81,.7);
+}
+.imgWrap figure img{
+    width:120px;
+    height:120px
+}
+.imgWrap figcaption{
+    text-align:center;
+    margin-top:20px;
+}
+.imgWrap figcaption span{
+    color:#fff;
+    font-size:1.5em;
+}
+.imgWrap figcaption small{
+    color:#fff;
+    display:block;
+    font-size:1.1em;
+}
+/* news--------------------------------------------------------------- */
+.news{
+    padding:5% 15%;
+    width:100%;
+    position:relative;
+}
+.news h1{
+    font-size:3em;
+    color:#fff;
+    margin-bottom:5%;
+}
+.news .newsCon{
+    width:100%;
+    height:500px;
+    text-align:center;
+    overflow:hidden;
+}
+.news .newsSlide{
+    width:100%;
+    height:100%;
+    position:relative;
+    transition:.5s;
+}
+.news figure{
+    position:absolute;
+    width:100%;
+    height:100%;
+}
+.news figure img{
+    height:100%;
+}
+.news .button1{
+    width:100%;
+    left:0;
+    position:absolute;
+    top:45%;
+    display:flex;
+    justify-content:space-between;
+    padding:0 15%;
+}
+.news .button1 img{
+    width:150px;
+    height:150px;
+    z-index:50;
 }
 /* --------------------- faction -------------------------------- */
 .faction{
@@ -310,7 +410,7 @@ header .header_wrap{
     text-align:center;
     margin-top:10px;
     letter-spacing:1vw;
-    font-size:2em;
+    font-size:3em;
 }
 .faction_wrap{
     width:100%;
@@ -426,7 +526,7 @@ header .header_wrap{
 }
 .guide h2{
     color:#fff;
-    font-size:1.5em;
+    font-size:3em;
     text-align:left;
     margin:2% 0 2% 5%;
 }
@@ -504,7 +604,7 @@ header .header_wrap{
 .showCase h2{
     color:#fff;
     text-align:left;
-    font-size:1.5em;
+    font-size:3em;
 }
 .showCase .shipInfo{
     position:relative;
@@ -520,7 +620,7 @@ header .header_wrap{
 }
 .showCase .shipInfo .shipDetail{
     width:100%;
-    position:absolute;
+    /* position:absolute; */
     left:0;
 }
 
@@ -589,28 +689,44 @@ header .header_wrap{
     height:100px;
     z-index:50;
 }
-
+/* gallery ------------------------------------------------------------------- */
+.gallery{
+    width:100%;
+    padding:5% 15%;
+}
+.gallery h2{
+    font-size:3em;
+    color:#fff;
+    margin-bottom:5%;
+}
+.gallery figure{
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+}
+.gallery figure img{
+    width: 20%;
+    margin:1%;
+}
 /* ------------------------------ aside -------------------------------------- */
 aside{
     position:fixed;
     right:0%;
-    top:20%;
     opacity:0;
     width:7%;
+    bottom:0;
     transition:1.5s;
-    display:none;
 }
 aside.show{
     opacity:1;
     right:3%;
     width:7%;
-    display:none;
 }
-.slideImg{
-    /* display:flex;
+/* .slideImg{
+    display:flex;
     flex-direction:column;
-     */
-}
+    
+} */
 .slideImg img{
     width:100%;
     opacity:.8;
@@ -687,6 +803,40 @@ footer div:nth-of-type(2) ul li a{
         width:90%;
         left:10%;
     }
+    .intro h1{
+        font-size:2em;
+        padding:10% 0;
+    }
+    .introText{
+        display:block;
+    }
+    .text{
+        width:100%;
+        margin-top:0;
+    }
+    .imgWrap{
+        width:100%;
+        margin-left:0;
+    }
+    .imgWrap figure{
+        margin:10%;
+    }
+    .news{
+        padding:5% 15%;
+    }
+    .news h1{
+        font-size:2em;
+    }
+    .news .button1{
+        padding:0 5%;
+    }
+    .news figure{
+        padding:5%;
+    }
+    .news figure img{
+       width:80%;
+       height:100%;
+    }
     .faction_title{
         opacity:1;
         padding-top:10%
@@ -716,9 +866,12 @@ footer div:nth-of-type(2) ul li a{
     .showCase .shipInfo table {
         height:35vw;
     }
+    .gallery figure img{
+        width:45%;
+    }
     aside{
         position:absolute;
-        top:270%;
+        bottom:22%;
         right:0;
         opacity:1;
     }
@@ -793,7 +946,12 @@ footer div:nth-of-type(2) ul li a{
         margin-top:3%;
         font-size:1em;
     }
-    
+    .news{
+        padding:15%;
+    }
+    .imgWrap figure{
+        margin:5%;
+    }
     .faction_wrap{
         flex-wrap:wrap;
     }
@@ -805,7 +963,7 @@ footer div:nth-of-type(2) ul li a{
         height:45vw;
     }
     .guide{
-        padding:5% 0;
+        padding:5% 10%;
     }
     .playerGuide figure img{
         width: 100%;
@@ -847,10 +1005,13 @@ footer div:nth-of-type(2) ul li a{
     }
     .showCase{
         position:relative;
+        padding:5% 15%;
+    }
+    .showCase .show{
+        padding:5% 15%;
     }
     .showCase .shipInfo{
         position:relative;
-        display:flex;
         height:40vw;
         overflow:hidden;
         overflow-x:auto; 
@@ -859,7 +1020,7 @@ footer div:nth-of-type(2) ul li a{
         position:absolute;
         left:0;
         top:0;
-    }
+    } 
     .showCase .shipInfo table{
         height:25vw;
         margin-left:5px;
@@ -929,6 +1090,32 @@ footer div:nth-of-type(2) ul li a{
         width:0;
         height:0;
     }
+    .text p{
+        display:none;
+    }
+    .text p:nth-of-type(1){
+        display:block;
+        font-size:1em;
+    }
+    .news .newsCon {
+        width: 100%;
+        height: 300px;
+        text-align: center;
+        overflow: hidden;
+    }
+    .news .button1 img {
+        width: 100px;
+        height: 100px;
+        z-index: 50;
+    }
+    .imgWrap figure {
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        padding: 5%;
+        margin: 5%;
+        background-color: rgba(50,66,81,.7);
+    }
     .faction_title p{
         font-size:1.5em;
     }
@@ -990,6 +1177,24 @@ footer div:nth-of-type(2) ul li a{
     }
     .showCase .shipInfo figure{
         margin-top:20px;
+    }
+    .gallery{
+        height:100vw; 
+    }
+    .gallery .galleryS{
+        margin-top:5%;
+        width:100%;
+        height:50%;
+        overflow:hidden;
+        overflow-x:auto;
+    }
+    .gallery figure{
+        position:relative;
+    }
+    .gallery figure img{
+        width:100%;
+        position:absolute;
+        padding:0 5%;
     }
     footer div:nth-of-type(1){
         display:block;
@@ -1064,6 +1269,26 @@ footer div:nth-of-type(2) ul li a{
         width:0;
         height:0;
     }
+    .intro h1{
+        font-size:1.5em;
+    }
+
+    .text p{
+        display:none;
+    }
+    .text p:nth-of-type(1){
+        display:block;
+        font-size:1em;
+    }
+    .news h1{
+        font-size:1.5em;
+    }
+    .news .newsCon {
+        width: 100%;
+        height: 200px;
+        text-align: center;
+        overflow: hidden;
+    }
     .faction_title p{
         font-size:1.5em;
     }
@@ -1113,6 +1338,9 @@ footer div:nth-of-type(2) ul li a{
     .showCase{
         padding:10%;
     }
+    .showCase h2{
+        font-size:1.5em;
+    }
     .showCase .sideImg{
         margin-top:50px;
     }
@@ -1125,6 +1353,9 @@ footer div:nth-of-type(2) ul li a{
     }
     .showCase .shipInfo figure{
         margin-top:20px;
+    }
+    .gallery h2{
+        font-size:1.5em;
     }
     footer div:nth-of-type(1){
         display:block;

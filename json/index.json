@@ -14,7 +14,7 @@
             "spec" : "spec",
             "wText" : "142500",
             "iText" : "Hauling",
-            "sImg" : "../img/ic_shipscharon.png"
+            "sImg" : "../img/index/ic_shipscharon.png"
         },
 
         {   
@@ -31,7 +31,7 @@
             "spec" : "spec",
             "wText" : "2554",
             "iText" : "Combat",
-            "sImg" : "../img/ic_spaceshipRetribution.png"
+            "sImg" : "../img/index/ic_spaceshipRetribution.png"
         },
 
         {
@@ -48,7 +48,7 @@
             "spec" : "spec",
             "wText" : "1250",
             "iText" : "Combat",
-            "sImg" : "../img/ic_spaceshipRiftter.png"
+            "sImg" : "../img/index/ic_spaceshipRiftter.png"
         },
 
         {
@@ -65,7 +65,7 @@
             "spec" : "spec",
             "wText" : "19200",
             "iText" : "Combat",
-            "sImg" : "../img/ic_spaceshipRaven.png"
+            "sImg" : "../img/index/ic_spaceshipRaven.png"
         },
 
         {
@@ -82,7 +82,7 @@
             "spec" : "spec",
             "wText" : "1740",
             "iText" : "Exploration",
-            "sImg" : "../img/ic_spaceshipAstero.png"
+            "sImg" : "../img/index/ic_spaceshipAstero.png"
         },
 
         {
@@ -99,7 +99,7 @@
             "spec" : "spec",
             "wText" : "600",
             "iText" : "Mining",
-            "sImg" : "../img/ic_spaceshipVenture.png"
+            "sImg" : "../img/index/ic_spaceshipVenture.png"
         },
 
         {
@@ -116,7 +116,7 @@
             "spec" : "spec",
             "wText" : "1010000",
             "iText" : "Fleet Support",
-            "sImg" : "../img/ic_spacechipHel.png"
+            "sImg" : "../img/index/ic_spacechipHel.png"
         },
 
         {
@@ -133,7 +133,7 @@
             "spec" : "spec",
             "wText" : "22000",
             "iText" : "Combat",
-            "sImg" : "../img/ic_shipsleshak.png"
+            "sImg" : "../img/index/ic_shipsleshak.png"
         }
 
     ]

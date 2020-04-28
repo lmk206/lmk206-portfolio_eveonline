@@ -1,31 +1,31 @@
 {
     "Faction":[
         {
-            "faction1":"../img/img_amarr1.png",
-            "faction2":"../img/img_amarr3.jpg",
+            "faction1":"../img/index/img_amarr1.png",
+            "faction2":"../img/index/img_amarr3.jpg",
             "faction3":"../video/vd_amarr.mp4#t=5",
-            "faction4":"../img/ic_amarr.jpg",
+            "faction4":"../img/index/ic_amarr.jpg",
             "faction5":"Click to view"
         },
         {
-            "faction1":"../img/img_gallente1.png",
-            "faction2":"../img/img_gallente3.jpg",
+            "faction1":"../img/index/img_gallente1.png",
+            "faction2":"../img/index/img_gallente3.jpg",
             "faction3":"../video/vd_gallente.mp4#t=5",
-            "faction4":"../img/ic_gallente.jpg",
+            "faction4":"../img/index/ic_gallente.jpg",
             "faction5":"Click to view"
         },
         {
-            "faction1":"../img/img_caldari1.png",
-            "faction2":"../img/img_caldari3.jpg",
+            "faction1":"../img/index/img_caldari1.png",
+            "faction2":"../img/index/img_caldari3.jpg",
             "faction3":"../video/vd_caldari.mp4#t=5",
-            "faction4":"../img/ic_caldari.jpg",
+            "faction4":"../img/index/ic_caldari.jpg",
             "faction5":"Click to view"
         },
         {
-            "faction1":"../img/img_minmatar1.png",
-            "faction2":"../img/img_minmatar3.jpg",
+            "faction1":"../img/index/img_minmatar1.png",
+            "faction2":"../img/index/img_minmatar3.jpg",
             "faction3":"../video/vd_minmatar.mp4#t=5",
-            "faction4":"../img/ic_minmatar.jpg",
+            "faction4":"../img/index/ic_minmatar.jpg",
             "faction5":"Click to view"
         }
     ]
