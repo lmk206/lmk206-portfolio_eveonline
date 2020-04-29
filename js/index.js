@@ -17,6 +17,7 @@ $(function(){
                 showAction();
                 visualFade();
                 appear();
+                introAction();
             }
         }
         
@@ -27,7 +28,7 @@ $(function(){
             $('html').scrollTop(0);
             $(window).on('mousewheel',function(e){
                 var wheel = e.originalEvent.wheelDelta;
-                console.log(wheel)
+                
                 if(bln){
                     bln = false;
                     if(wheel < 0){
@@ -39,7 +40,7 @@ $(function(){
                         if(num == i){
                             
                             move = $(this).offset().top;
-                            console.log(move)
+                        
                         }   
                     })
                     
@@ -120,6 +121,52 @@ $(function(){
         }
     // eve introducing ----------------------------------------------------------------
     
+    // window.addEventListener('scroll',function(){
+        // var inText = document.querySelector('.text');
+        // var imgWrapF = document.querySelectorAll(".imgWrap figure");
+        // var locationT = document.querySelector('.intro').offsetTop;
+        // var windowP = window.pageYOffset;
+        // var windowY = window.scrollY;
+        // var windowH = window.innerHeight;
+       
+        // console.log(windowY);
+        // console.log(locationT - windowH)
+        // // if((locationT - windowH) < windowY){
+        // //     inText.classList.add('active');
+        // //     imgWrapF.classList.add('active');
+        // //     inText.classList.add('show');
+        // //     imgWrapF.classList.add('show');
+        // // }
+        // if((locationT-windowH) < windowY){
+        //     $(inText).addClass('active');
+        //     $(imgWrapF).addClass('active');
+        //     $(inText).addClass('show');
+        //     $(imgWrapF).addClass('show');
+        // }
+    // })[]
+
+        function introAction(){
+            $(window).on('scroll',function(){
+                var sTop = $(this).scrollTop();
+                var winH = $(window).height();
+                var intro = $('.intro').offset().top
+                if((intro - winH) < sTop){
+                    $('.text').addClass('active');
+                    $('.imgWrap figure').addClass('active');
+                    setTimeout(function(){
+                    $('.text').addClass('show');
+                    $('.imgWrap figure').addClass('show');
+                    },500)
+                }else{
+                    $('.text').removeClass('active');
+                    $('.imgWrap figure').removeClass('active');
+                    setTimeout(function(){
+                    $('.text').removeClass('show');
+                    $('.imgWrap figure').removeClass('show');
+                    },500)
+                }
+            });
+        }
     // news ----------------------------------------------------------------------------
         var newsBox = document.querySelector('.newsSlide')
         var newsF = document.querySelectorAll('.newsSlide figure');
@@ -128,9 +175,7 @@ $(function(){
         var prev = button1[0];
         var next = button1[1];
         var nIndex = 0;
-        console.log(next)
-        console.log(button1);
-        console.log(button1[1]);
+       
             for(let i = 0 ; i < newsF.length; i++){
                 newsF[i].style.left = i*100+"%";
             }
@@ -146,46 +191,48 @@ $(function(){
             console.log(newsImg);
             box2.style.left = "-100%"; // 앞에 추가된 막내의 초기 left값 조정
             box1.style.left = "500%"; // 뒤에 추가된 첫째의 초기 left값 조정
-
         prev.addEventListener('click',function(){
+            newsBox.style.transition="0.5s";
             --nIndex;
-                newsBox.style.left = "-"+(nIndex*100)+"%";
-                newsBox.style.transition = ".5s"; 
             setTimeout(function(){
                 if(nIndex < 0){
+                    newsBox.style.transition="0s"
                     nIndex = 4;
                     newsBox.style.left = "-400%";
-                    newsBox.style.transition="0s"
                 }
             },500)
+            if(nIndex!=4){
+                newsBox.style.left = "-"+(nIndex*100)+"%"
+            }
         })
 
         next.addEventListener('click',function(){
+            newsBox.style.transition="0.5s";
             ++nIndex;
-                newsBox.style.left = "-"+(nIndex*100)+"%";
-                newsBox.style.transition = ".5s"
             setTimeout(function(){
                 if(nIndex > 4){
+                    newsBox.style.transition="0s"
                     nIndex = 0;
                     newsBox.style.left = "0%";
-                    newsBox.style.transtion="0s"
                 }
             },500)
+            if(nIndex!=0){
+            newsBox.style.left = "-"+(nIndex*100)+"%";
+        }
         })
     // Faction ----------------------------------------------------------------------------
     // faction 컨텐츠 ------------------------------------------------------------------
         function facAction(){
             $(window).on('scroll',function(){
-                console.log('a')
                 var sTop = $(this).scrollTop();
                 var winH = $(window).height();
                 var facW = $('.faction_wrap').offset().top
                 if((facW - winH) < sTop){
-                    $('.faction_wrap').addClass('show')
-                    $('.faction_title').addClass('show')
+                    $('.faction_wrap').addClass('show');
+                    $('.faction_title').addClass('show');
                 }else{
-                    $('.faction_wrap').removeClass('show')
-                    $('.faction_title').removeClass('show')
+                    $('.faction_wrap').removeClass('show');
+                    $('.faction_title').removeClass('show');
                 }
             });
         }
