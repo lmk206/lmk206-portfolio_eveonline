@@ -295,10 +295,10 @@ header .header_wrap{
 .intro{
     padding:10% 15%;
 }
-.intro h1, .intro p{
+.intro h2, .intro p{
     color:#fff;
 }
-.intro h1{
+.intro h2{
     font-size:3em;
 }
 .intro p{
@@ -384,7 +384,7 @@ header .header_wrap{
     width:100%;
     position:relative;
 }
-.news h1{
+.news h2{
     font-size:3em;
     color:#fff;
     margin-bottom:5%;
@@ -836,7 +836,7 @@ footer div:nth-of-type(2) ul li a{
         width:90%;
         left:10%;
     }
-    .intro h1{
+    .intro h2{
         font-size:2em;
         padding:10% 0;
     }
@@ -857,7 +857,7 @@ footer div:nth-of-type(2) ul li a{
     .news{
         padding:5% 15%;
     }
-    .news h1{
+    .news h2{
         font-size:2em;
     }
     .news .button1{
@@ -1302,7 +1302,7 @@ footer div:nth-of-type(2) ul li a{
         width:0;
         height:0;
     }
-    .intro h1{
+    .intro h2{
         font-size:1.5em;
     }
 
@@ -1313,7 +1313,7 @@ footer div:nth-of-type(2) ul li a{
         display:block;
         font-size:1em;
     }
-    .news h1{
+    .news h2{
         font-size:1.5em;
     }
     .news .newsCon {
