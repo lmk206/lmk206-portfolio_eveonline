@@ -387,7 +387,7 @@ $(function(){
                 var sTop = $(this).scrollTop();
                 var winH = $(window).height();
                 var shoC = $('.showCase').offset().top;
-                var gallC = $('.gallery').offset().top;
+                var gallC = $('.playNow').offset().top;
                 if((shoC - winH) < sTop && (gallC - winH) > sTop){
                     $('.showCase').addClass('show');
                     $('aside').addClass('show');   

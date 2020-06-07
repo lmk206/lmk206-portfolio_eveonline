@@ -416,12 +416,13 @@ header .header_wrap{
     top:45%;
     display:flex;
     justify-content:space-between;
-    padding:0 15%;
+    padding:2% 25%;
 }
 .news .button1 img{
-    width:150px;
-    height:150px;
+    width:50px;
+    height:50px;
     z-index:50;
+    vertical-align:middle
 }
 /* --------------------- faction -------------------------------- */
 .faction{
@@ -725,7 +726,7 @@ header .header_wrap{
 /* gallery ------------------------------------------------------------------- */
 .gallery{
     width:100%;
-    padding:5% 15%;
+    padding:5% 20%;
 }
 .gallery h2{
     font-size:3em;
@@ -740,6 +741,38 @@ header .header_wrap{
 .gallery figure img{
     width: 20%;
     margin:1%;
+}
+.popGall{
+    display:none;
+}
+.popGall.active{
+    display:block;
+}
+/* playnow -------------------------------------------------------------------- */
+.playNow{
+    padding: 10% 15%;
+    width:100%;
+}
+.playNow figure{
+    width:100%;
+    position:relative;
+}
+
+.playNow figure img{
+    width:100%;
+}
+
+.playNow figure figcaption{
+    position:absolute;
+    left:45%;
+    top:80%;
+}
+.playNow figure figcaption a span{
+    color:#fff;
+    background-color:#2981bb;
+    padding:2% 4%;
+    font-size:3em;
+
 }
 /* ------------------------------ aside -------------------------------------- */
 aside{
